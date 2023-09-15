@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+ 
+  <ThingDef ParentName="MeleeWeaponUltratech">
+    <defName>SU_Katalina</defName>
+    <label>Katalina Tactical Blade</label>
+    <description>The Katalina is a light weight agile yet sharp blade that can cut some armor and is developed by Ilya Tech to provide it's user fast combos of slashes.</description>
+    <equippedAngleOffset>-10</equippedAngleOffset>
+    <weaponClasses>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>SU_TacticalSword</li>
+    </weaponTags>
+    <graphicData>
+      <texPath>Things/Weapons/SU_Katalina</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1.8</cooldownTime>
+        <armorPenetration>0.9</armorPenetration>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.4</cooldownTime>
+        <armorPenetration>0.7</armorPenetration>
+      </li>
+    </tools>
+	<statBases>
+      <WorkToMake>19000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+    <recipeMaker>
+	  <researchPrerequisite>IlyaTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>SU_Bench</li>
+      </recipeUsers>
+	 <workSkill>Crafting</workSkill>
+    </recipeMaker>
+    <costList>
+      <Steel>85</Steel>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="MeleeWeaponUltratech">
+    <defName>SU_Sevika</defName>
+    <label>Sevika Combat Knife</label>
+    <description>The Sevika is a light weight military grade combat knife developed by Ilya Tech, dont play with it!.</description>
+    <equippedAngleOffset>-10</equippedAngleOffset>
+    <weaponClasses>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>SU_TacticalKnife</li>
+    </weaponTags>
+    <graphicData>
+      <texPath>Things/Weapons/SU_Sevika</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.8</cooldownTime>
+        <armorPenetration>0.9</armorPenetration>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.4</cooldownTime>
+        <armorPenetration>0.7</armorPenetration>
+      </li>
+    </tools>
+	<statBases>
+      <WorkToMake>10800</WorkToMake>
+      <Mass>1</Mass>
+    </statBases>
+    <recipeMaker>
+	  <researchPrerequisite>IlyaTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>SU_Bench</li>
+      </recipeUsers>
+	 <workSkill>Crafting</workSkill>
+    </recipeMaker>
+    <costList>
+      <Steel>50</Steel>
+    </costList>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--=============== AP Bullets ====================-->
+  
+  <ThingDef ParentName="ResourceBase">
+		<defName>SU_ContainerAP</defName>
+		<label>AP Cartridges</label>
+		<description>Armor Penetrating cartridges specially made for the Eclair.</description>
+		<graphicData>
+			<texPath>Things/Items/SU_AP_Rounds</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>300</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+	<researchPrerequisites>
+	  <li>IlyaTech</li>
+	</researchPrerequisites>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.5</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>MortarShell</li>
+    </tradeTags>
+    <thingSetMakerTags><li>RewardStandardHighFreq</li></thingSetMakerTags>
+    <allowedArchonexusCount>5</allowedArchonexusCount>
+	</ThingDef>
+	
+    <!--=============== HE Bullets ====================-->
+  
+  <ThingDef ParentName="ResourceBase">
+		<defName>SU_ContainerHE</defName>
+		<label>HE Cartridges</label>
+		<description>High Explosive cartridges specially made for the Altair.</description>
+		<graphicData>
+			<texPath>Things/Items/SU_HE_Rounds</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>150</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+	<researchPrerequisites>
+	  <li>IlyaTech</li>
+	</researchPrerequisites>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <MarketValue>2</MarketValue>
+      <Mass>0.8</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>MortarShell</li>
+    </tradeTags>
+    <thingSetMakerTags><li>RewardStandardHighFreq</li></thingSetMakerTags>
+    <allowedArchonexusCount>5</allowedArchonexusCount>
+	</ThingDef>
+	
+</Defs>

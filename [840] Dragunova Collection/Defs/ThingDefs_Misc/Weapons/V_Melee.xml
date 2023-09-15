@@ -1,0 +1,922 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+ <ThingDef Name="V_BaseChargeWeapon" Abstract="True" ParentName="BaseWeapon">
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Biocodable"/>
+    </comps>
+    <burnableByRecipe>true</burnableByRecipe>
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>V_ChargedArsenal</li>
+    </thingCategories>
+    <weaponClasses>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+     <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+
+
+	
+	    <!--========== Charged ==========-->
+ 
+  <ThingDef ParentName="V_BaseChargeWeapon">
+    <defName>V_ChargeCutter</defName>
+    <label>charge cutter</label>
+    <description>A spacer-tech combat knife utilizing pulse-charge technology. The blade charges and confines itself inside a miniaturized magnetic confinement shell, allowing its user to hold in their appendage a fast, easy to handle armor-piercing melee tool that would make even the most seasoned of Cataphract janissaries sweat a bit.</description>
+    <meleeHitSound>Heavy_Dagger</meleeHitSound>
+	<soundInteract>Interact_ChargeRifle</soundInteract>
+	<equippedAngleOffset>-10</equippedAngleOffset>
+	<weaponTags>
+      <li>V_ChargedMelee</li>
+    </weaponTags>
+    <graphicData>
+      <texPath>Things/Weapons/V_ChargedCutter</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>21.6</power>
+        <cooldownTime>1.6</cooldownTime>
+        <armorPenetration>0.66</armorPenetration>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>16.2</power>
+        <cooldownTime>1.2</cooldownTime>
+        <armorPenetration>0.5</armorPenetration>
+      </li>
+    </tools>
+	<statBases>
+      <WorkToMake>20000</WorkToMake>
+      <Mass>1</Mass>
+    </statBases>
+    <recipeMaker>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+	  <researchPrerequisite>ChargedShot</researchPrerequisite>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Plasteel>40</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="V_BaseChargeWeapon">
+    <defName>V_ChargeKatana</defName>
+    <label>charge katana</label>
+    <description>A spacer-tech long blade forged in the style of a katana utilizing pulse-charge technology. The most elegant of sword styles, the blade charges into the magnetic confinement shell formed by the hard-pattern of the physical blade, fab-weaved into a thousand layers. Sharp, fast, and lightweight, even the most clumsy of fools can cut as easily as a blademaster with this sword.</description>
+    <meleeHitSound>Heavy_Katana</meleeHitSound>
+	<soundInteract>Interact_ChargeRifle</soundInteract>
+	<equippedAngleOffset>-10</equippedAngleOffset>
+	<weaponTags>
+      <li>V_ChargedMelee</li>
+    </weaponTags>
+    <graphicData>
+      <texPath>Things/Weapons/V_ChargedKatana</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.3</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>23</power>
+        <cooldownTime>1.4</cooldownTime>
+        <armorPenetration>0.69</armorPenetration>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>1.1</cooldownTime>
+        <armorPenetration>0.57</armorPenetration>
+      </li>
+    </tools>
+	<statBases>
+      <WorkToMake>25000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+    <recipeMaker>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+	  <researchPrerequisite>ChargedShot</researchPrerequisite>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Plasteel>75</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="V_BaseChargeWeapon">
+    <defName>V_ChargeKhopesh</defName>
+    <label>charge khopesh</label>
+    <description>A spacer-tech curved blade forged in the style of an Egyptian khopesh utilizing pulse-charge technology. As an improvement of both efficiency of magnetic shell generation as well as the inherent cutting power of the blade, Gjallarhorn techs looked to the ancient axe-inspired blade of the khopesh for inspiration, finding the moon-crescent blade an excellent shape to utilize for high-efficiency cutting and combat performance. One for those who want axe and sword in one.</description>
+    <meleeHitSound>Heavy_Katana</meleeHitSound>
+	<soundInteract>Interact_ChargeRifle</soundInteract>
+    <equippedAngleOffset>-10</equippedAngleOffset>
+	<weaponTags>
+      <li>V_ChargedMelee</li>
+    </weaponTags>
+    <graphicData>
+      <texPath>Things/Weapons/V_ChargedKhopesh</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.2</drawSize>
+      <drawOffsetSouth>(0.2,0,0)</drawOffsetSouth>
+      <drawOffsetNorth>(0.2,0,0)</drawOffsetNorth>
+      <drawOffsetEast>(0.2,0,0)</drawOffsetEast>
+      <drawOffsetWest>(0.2,0,0)</drawOffsetWest>
+    </graphicData>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>1.6</cooldownTime>
+        <armorPenetration>0.60</armorPenetration>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>22</power>
+        <cooldownTime>1.4</cooldownTime>
+        <armorPenetration>0.58</armorPenetration>
+      </li>
+    </tools>
+	<statBases>
+      <WorkToMake>26000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+    <recipeMaker>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+	  <researchPrerequisite>ChargedShot</researchPrerequisite>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Plasteel>75</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>  
+  
+  
+  <ThingDef ParentName="V_BaseChargeWeapon">
+    <defName>V_ChargeLongSword</defName>
+    <label>charge longsword</label>
+    <description>A spacer-tech long sword utilizing pulse-charge technology. Utilizing a unique development of polar magneto-cycling to allow for double-sided blades, this sword pattern finally saw successful adoption over twin or multi-shell blades which were inefficient and poor-performing due to magnetic shell interference. One of the most popular designs from the tech-lodges and one of the most successful to date.</description>
+    <meleeHitSound>Heavy_Katana</meleeHitSound>
+	<soundInteract>Interact_ChargeRifle</soundInteract>
+    <equippedAngleOffset>-10</equippedAngleOffset>
+	<weaponTags>
+      <li>V_ChargedMelee</li>
+    </weaponTags>
+    <graphicData>
+      <texPath>Things/Weapons/V_ChargedLongSword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.2</drawSize>
+      <drawOffsetSouth>(0.2,0,0)</drawOffsetSouth>
+      <drawOffsetNorth>(0.2,0,0)</drawOffsetNorth>
+      <drawOffsetEast>(0.2,0,0)</drawOffsetEast>
+      <drawOffsetWest>(0.2,0,0)</drawOffsetWest>
+    </graphicData>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>1.6</cooldownTime>
+        <armorPenetration>0.67</armorPenetration>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>1.4</cooldownTime>
+        <armorPenetration>0.58</armorPenetration>
+      </li>
+    </tools>
+	<statBases>
+      <WorkToMake>26000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+    <recipeMaker>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+	  <researchPrerequisite>ChargedShot</researchPrerequisite>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Plasteel>75</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>  
+  
+  
+  <ThingDef ParentName="V_BaseChargeWeapon">
+    <defName>V_ChargeBlade</defName>
+    <label>charge Blade</label>
+    <description>A spacer-tech blade utilizing pulse-charge technology. Utilizing a unique development of polar magneto-cycling to strengthen the mass-effect of the pulse-blade, this allowed for a heftier blade with unparalleled performance alongside the benefit of simple heft and mass with each swing to both slice and punch through armor easily.</description>
+    <meleeHitSound>Heavy_Melee</meleeHitSound>
+	<soundInteract>Interact_ChargeRifle</soundInteract>
+    <equippedAngleOffset>-10</equippedAngleOffset>
+	<weaponTags>
+      <li>V_ChargedMelee</li>
+    </weaponTags>
+    <graphicData>
+      <texPath>Things/Weapons/V_ChargedBlade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>23</power>
+        <cooldownTime>1.8</cooldownTime>
+        <armorPenetration>0.71</armorPenetration>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20.2</power>
+        <cooldownTime>1.6</cooldownTime>
+        <armorPenetration>0.62</armorPenetration>
+      </li>
+    </tools>
+	<statBases>
+      <WorkToMake>28000</WorkToMake>
+      <Mass>4</Mass>
+    </statBases>
+    <recipeMaker>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+	  <researchPrerequisite>ChargedShot</researchPrerequisite>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Plasteel>100</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="V_BaseChargeWeapon">
+    <defName>V_ChargeAxe</defName>
+    <label>charge axe</label>
+    <description>A spacer-tech axe utilizing pulse-charge technology. Utilizing one of the oldest weapon designs of mankind, this axe utilizes the miniaturized magnetic shell patterning of the Cutter and upgrading it into its own design, mounted atop a light-weight, high-strength handle. Easy to handle, cuts through armor like a scyther blade through flesh, and recognizable anywhere, this axe earns its high popularity with gusto.</description>
+	<soundInteract>Interact_ChargeRifle</soundInteract>
+	<equippedAngleOffset>-10</equippedAngleOffset>
+	<weaponTags>
+      <li>V_ChargedMelee</li>
+    </weaponTags>
+    <graphicData>
+      <texPath>Things/Weapons/V_ChargedAxe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>1.6</cooldownTime>
+        <armorPenetration>0.66</armorPenetration>
+      </li>
+    </tools>
+	<statBases>
+      <WorkToMake>25000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+    <recipeMaker>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+	  <researchPrerequisite>ChargedShot</researchPrerequisite>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Plasteel>45</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
+  
+    <!--========== Blunt ==========-->
+ 
+  <ThingDef ParentName="V_BaseChargeWeapon">
+    <defName>V_ChargeBaton</defName>
+    <label>charge baton</label>
+    <description>A spacer-tech baton utilizing pulse-charge technology. Utilizing a known magnetic resonance quirk in creating pulse-blades, this baton design maximizes and augments the user's strikes with additional impact force, enough to damage through armor. A unique offering for the uniquely discerning.</description>
+	<soundInteract>Interact_ChargeRifle</soundInteract>
+	<equippedAngleOffset>-10</equippedAngleOffset>
+    <weaponClasses>
+      <li>MeleeBlunt</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>V_ChargedMelee</li>
+    </weaponTags>
+    <graphicData>
+      <texPath>Things/Weapons/V_ChargedBaton</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.4</cooldownTime>
+      </li>
+      <li>
+        <label>baton head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>1.6</cooldownTime>
+        <armorPenetration>0.40</armorPenetration>
+      </li>
+    </tools>
+	<statBases>
+      <WorkToMake>20000</WorkToMake>
+      <Mass>1</Mass>
+    </statBases>
+    <recipeMaker>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+	  <researchPrerequisite>ChargedShot</researchPrerequisite>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Plasteel>50</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="V_BaseChargeWeapon">
+    <defName>V_ChargeMace</defName>
+    <label>charge mace</label>
+    <description>A spacer-tech mace utilizing pulse-charge technology. Utilizing and maximizing a known magnetic resonance quirk in creating pulse-blades, this mace design maximizes and augments the user's strikes with additional impact force, enough to damage through armor. When you want to deliver harder knocks and batons are just not enough.</description>
+	<soundInteract>Interact_ChargeRifle</soundInteract>
+    <equippedAngleOffset>-10</equippedAngleOffset>
+    <weaponClasses>
+      <li>MeleeBlunt</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>V_ChargedMelee</li>
+    </weaponTags>
+    <graphicData>
+      <texPath>Things/Weapons/V_ChargedMace</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.2</drawSize>
+      <drawOffsetSouth>(0.2,0,0)</drawOffsetSouth>
+      <drawOffsetNorth>(0.2,0,0)</drawOffsetNorth>
+      <drawOffsetEast>(0.2,0,0)</drawOffsetEast>
+      <drawOffsetWest>(0.2,0,0)</drawOffsetWest>
+    </graphicData>
+    <tools>
+      <li>
+        <label>mace head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>24</power>
+        <cooldownTime>1.6</cooldownTime>
+        <armorPenetration>0.55</armorPenetration>
+      </li>
+      <li>
+        <label>mace handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.4</cooldownTime>
+      </li>
+    </tools>
+	<statBases>
+      <WorkToMake>25000</WorkToMake>
+      <Mass>3</Mass>
+    </statBases>
+    <recipeMaker>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+	  <researchPrerequisite>ChargedShot</researchPrerequisite>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Plasteel>70</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="V_BaseChargeWeapon">
+    <defName>V_ChargeHammer</defName>
+    <label>charge sledgehammer</label>
+    <description>A spacer-tech sledge hammer utilizing pulse-charge technology. Maximizing a known magnetic resonance quirk in creating pulse-blades, this sledge hammer design is the epitome of impact force delivery, leaving even the most armored of foes quite discombobulated, if not suffering internal trauma. Many a user report highly satisfactory results utilizing this design.</description>
+    <meleeHitSound>Heavy_Blunt</meleeHitSound>
+	<soundInteract>Interact_ChargeRifle</soundInteract>
+    <equippedAngleOffset>-10</equippedAngleOffset>
+    <weaponClasses>
+      <li>MeleeBlunt</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>V_ChargedMelee</li>
+    </weaponTags>
+    <graphicData>
+      <texPath>Things/Weapons/V_ChargedHammer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.6</drawSize>
+      <drawOffsetSouth>(0.3,0,0)</drawOffsetSouth>
+      <drawOffsetNorth>(0.3,0,0)</drawOffsetNorth>
+      <drawOffsetEast>(0.3,0,0)</drawOffsetEast>
+      <drawOffsetWest>(0.3,0,0)</drawOffsetWest>
+    </graphicData>
+    <tools>
+      <li>
+        <label>hammer handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>hammer face</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>28</power>
+        <cooldownTime>2.4</cooldownTime>
+        <armorPenetration>0.65</armorPenetration>
+      </li>
+    </tools>
+	<statBases>
+      <WorkToMake>26000</WorkToMake>
+      <Mass>5</Mass>
+    </statBases>
+    <recipeMaker>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+	  <researchPrerequisite>ChargedShot</researchPrerequisite>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Plasteel>100</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+  </ThingDef>
+
+    <!--========== Spears ==========-->
+
+ <ThingDef ParentName="V_BaseChargeWeapon">
+    <defName>V_ChargeGlaive</defName>
+    <label>charge glaive</label>
+    <description>A spacer-tech glaive utilizing pulse-charge technology. A successful attempt at maximizing the armor-piercing properties of pulse-bade magnetic shell confinement, this glaive design is the answer for handling the most stubborn of mechanoid centipedes. Care must be taken to not let the blade too close due to the high-energies resulting from the unique magnetic pattern.</description>
+    <meleeHitSound>Heavy_Melee</meleeHitSound>
+	<soundInteract>Interact_ChargeRifle</soundInteract>
+    <equippedAngleOffset>-10</equippedAngleOffset>
+	<weaponTags>
+      <li>V_ChargedMelee</li>
+    </weaponTags>
+    <graphicData>
+      <texPath>Things/Weapons/V_ChargedGlaive</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+       <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.5</drawSize>
+      <drawOffsetSouth>(0.3,0,0)</drawOffsetSouth>
+      <drawOffsetNorth>(0.3,0,0)</drawOffsetNorth>
+      <drawOffsetEast>(0.3,0,0)</drawOffsetEast>
+      <drawOffsetWest>(0.3,0,0)</drawOffsetWest>
+    </graphicData>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>22</power>
+        <cooldownTime>1.6</cooldownTime>
+        <armorPenetration>0.73</armorPenetration>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>19</power>
+        <cooldownTime>1.5</cooldownTime>
+        <armorPenetration>0.60</armorPenetration>
+      </li>
+    </tools>
+	<statBases>
+      <WorkToMake>26000</WorkToMake>
+      <Mass>3</Mass>
+    </statBases>
+    <recipeMaker>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+	  <researchPrerequisite>ChargedShot</researchPrerequisite>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Plasteel>130</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+  </ThingDef>
+  
+ <ThingDef ParentName="V_BaseChargeWeapon">
+    <defName>V_ChargeMagariYari</defName>
+    <label>charge magari yari</label>
+    <description>A spacer-tech magari yari utilizing pulse-charge technology. A partnered design alongside the halberd in miniaturizing polar-magneto-cycling for double-sided blades, this magari will certainly reach out and cut someone, armor or no.</description>
+    <meleeHitSound>Heavy_Melee</meleeHitSound>
+	<soundInteract>Interact_ChargeRifle</soundInteract>
+    <equippedAngleOffset>-10</equippedAngleOffset>
+	<weaponTags>
+      <li>V_ChargedMelee</li>
+    </weaponTags>
+    <graphicData>
+      <texPath>Things/Weapons/V_ChargedMagariYari</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+       <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.5</drawSize>
+      <drawOffsetSouth>(0.3,0,0)</drawOffsetSouth>
+      <drawOffsetNorth>(0.3,0,0)</drawOffsetNorth>
+      <drawOffsetEast>(0.3,0,0)</drawOffsetEast>
+      <drawOffsetWest>(0.3,0,0)</drawOffsetWest>
+    </graphicData>
+    <tools>
+      <li>
+        <label>main blade</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>1.6</cooldownTime>
+        <armorPenetration>0.55</armorPenetration>
+      </li>
+      <li>
+        <label>left blade</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.4</cooldownTime>
+        <armorPenetration>0.40</armorPenetration>
+      </li>
+      <li>
+        <label>right blade</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.4</cooldownTime>
+        <armorPenetration>0.40</armorPenetration>
+      </li>
+    </tools>
+	<statBases>
+      <WorkToMake>26000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+    <recipeMaker>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+	  <researchPrerequisite>ChargedShot</researchPrerequisite>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Plasteel>130</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+  </ThingDef>
+  
+ <ThingDef ParentName="V_BaseChargeWeapon">
+    <defName>V_ChargeHalberd</defName>
+    <label>charge halberd</label>
+    <description>A spacer-tech halberd utilizing pulse-charge technology. A partnered design alongside the magari in miniaturizing polar-magneto-cycling for double-sided blades, this halberd will certainly reach out and cut someone, armor or no.</description>
+    <meleeHitSound>Heavy_Melee</meleeHitSound>
+	<soundInteract>Interact_ChargeRifle</soundInteract>
+    <equippedAngleOffset>-10</equippedAngleOffset>
+	<weaponTags>
+      <li>V_ChargedMelee</li>
+    </weaponTags>
+    <graphicData>
+      <texPath>Things/Weapons/V_ChargedHalberd</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+       <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.5</drawSize>
+      <drawOffsetSouth>(0.3,0,0)</drawOffsetSouth>
+      <drawOffsetNorth>(0.3,0,0)</drawOffsetNorth>
+      <drawOffsetEast>(0.3,0,0)</drawOffsetEast>
+      <drawOffsetWest>(0.3,0,0)</drawOffsetWest>
+    </graphicData>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>point blade</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>1.6</cooldownTime>
+        <armorPenetration>0.55</armorPenetration>
+      </li>
+      <li>
+        <label>axe blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>1.4</cooldownTime>
+        <armorPenetration>0.45</armorPenetration>
+      </li>
+    </tools>
+	<statBases>
+      <WorkToMake>26000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+    <recipeMaker>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+	  <researchPrerequisite>ChargedShot</researchPrerequisite>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Plasteel>130</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+  </ThingDef>
+  
+<ThingDef ParentName="V_BaseChargeWeapon">
+    <defName>V_ChargeScythe</defName>
+    <label>charge scythe</label>
+    <description>A spacer-tech scythe utilizing pulse-charge technology. A result of maximizing the miniaturized polar-magneto-cycling of both the halberd and magari designs leads to a high-performance polearm weapon with deadly efficiency, combined with the smooth curves of a weapon suitable for cutting down foes in droves.</description>
+    <meleeHitSound>Heavy_Melee</meleeHitSound>
+	<soundInteract>Interact_ChargeRifle</soundInteract>
+    <equippedAngleOffset>-10</equippedAngleOffset>
+	<weaponTags>
+      <li>V_ChargedMelee</li>
+    </weaponTags>
+    <graphicData>
+      <texPath>Things/Weapons/V_ChargedScythe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+       <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.6</drawSize>
+      <drawOffsetSouth>(0.3,0,0)</drawOffsetSouth>
+      <drawOffsetNorth>(0.3,0,0)</drawOffsetNorth>
+      <drawOffsetEast>(0.3,0,0)</drawOffsetEast>
+      <drawOffsetWest>(0.3,0,0)</drawOffsetWest>
+    </graphicData>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>scythe edge</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>24.8</power>
+        <cooldownTime>1.6</cooldownTime>
+        <armorPenetration>0.65</armorPenetration>
+      </li>
+      <li>
+        <label>scythe blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>18.5</power>
+        <cooldownTime>1.4</cooldownTime>
+        <armorPenetration>0.43</armorPenetration>
+      </li>
+    </tools>
+	<statBases>
+      <WorkToMake>30000</WorkToMake>
+      <Mass>3</Mass>
+    </statBases>
+    <recipeMaker>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+	  <researchPrerequisite>ChargedShot</researchPrerequisite>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Plasteel>145</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+  </ThingDef>
+  
+</Defs>

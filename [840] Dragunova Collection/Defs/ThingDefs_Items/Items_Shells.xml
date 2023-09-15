@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="SU_MissileBase" ParentName="ResourceBase" Abstract="True">
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <tickerType>Normal</tickerType>
+    <stackLimit>25</stackLimit>
+    <techLevel>Spacer</techLevel>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>25</MarketValue>
+      <Mass>1.5</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>MortarShells</li>
+    </thingCategories>
+    <tradeTags>
+      <li>MortarShell</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef Name="MakeableMissileBase" ParentName="SU_MissileBase" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <effectWorking>Cook</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <workAmount>800</workAmount>
+      <targetCountAdjustment>6</targetCountAdjustment>
+      <workSkill>Crafting</workSkill>
+      <recipeUsers>
+        <li>SU_Bench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+  
+  <ThingDef Name="SU_ShellBase" ParentName="ResourceBase" Abstract="True">
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <tickerType>Normal</tickerType>
+    <stackLimit>25</stackLimit>
+    <techLevel>Spacer</techLevel>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>15</MarketValue>
+      <Mass>1.5</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>MortarShells</li>
+    </thingCategories>
+    <tradeTags>
+      <li>MortarShell</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef Name="MakeableShellBase" ParentName="SU_ShellBase" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <effectWorking>Cook</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <workAmount>800</workAmount>
+      <targetCountAdjustment>6</targetCountAdjustment>
+      <workSkill>Crafting</workSkill>
+      <recipeUsers>
+        <li>SU_Bench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+ 
+  <!-- HE-Missile -->
+
+  <ThingDef ParentName="MakeableMissileBase">
+    <defName>SU_HE_Missiles</defName>
+    <label>HE: Missiles</label>
+    <description>Ilya tech. rocket propelled shell filled with compressed fission charges. Used by Missile Turrets and Ground support weaponry. Explodes when damaged.</description>
+    <graphicData>
+      <texPath>Things/Items/SU_HE_Missiles</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>4.5</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+        <wickTicks>30~60</wickTicks>
+      </li>
+    </comps>
+    <projectileWhenLoaded>SU_HE_Missile</projectileWhenLoaded>
+    <costList>
+      <Steel>25</Steel>
+      <Chemfuel>5</Chemfuel>
+    </costList>
+    <costListForDifficulty>
+      <difficultyVar>classicMortars</difficultyVar>
+      <costList>
+        <Steel>50</Steel>
+        <Chemfuel>15</Chemfuel>
+      </costList>
+    </costListForDifficulty>
+    <recipeMaker>
+      <researchPrerequisite>IlyaTech</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>SU_HE_Missile</defName>
+    <label>HE: Missile</label>
+    <graphicData>
+      <texPath>Things/Bullets/SU_SpritzMissile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <!-- damage amount is the damage def default -->
+      <speed>95</speed>
+      <explosionRadius>4.5</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>MortarBomb_Explode</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="MakeableMissileBase">
+    <defName>SU_HE_Shells</defName>
+    <label>HE: Shells</label>
+    <description>Ilya tech. anti tank shell filled with compressed fission charges. Explodes when damaged.</description>
+    <graphicData>
+      <texPath>Things/Items/SU_HE_Shells</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>4.5</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+        <wickTicks>30~60</wickTicks>
+      </li>
+    </comps>
+    <projectileWhenLoaded>SU_HE_Shell</projectileWhenLoaded>
+    <costList>
+      <Steel>15</Steel>
+      <Chemfuel>2</Chemfuel>
+    </costList>
+    <costListForDifficulty>
+      <difficultyVar>classicMortars</difficultyVar>
+      <costList>
+        <Steel>30</Steel>
+        <Chemfuel>6</Chemfuel>
+      </costList>
+    </costListForDifficulty>
+    <recipeMaker>
+      <researchPrerequisite>IlyaTech</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>SU_HE_Shell</defName>
+    <label>HE: Shell</label>
+    <graphicData>
+      <texPath>Things/Bullets/SU_LiberioShell</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <!-- damage amount is the damage def default -->
+      <speed>95</speed>
+      <explosionRadius>4.5</explosionRadius>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>MortarBomb_Explode</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+    </projectile>
+  </ThingDef>
+
+
+</Defs>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+	<name>The Dragunova Collection</name>
+	<author>ValiDragunova / SuviIlyaDragunova / XxHyde840xX</author>
+	<supportedVersions>
+			<li>1.4</li>
+  	</supportedVersions>
+	<packageId>840.Dragunova.Combined</packageId>
+	<description>THIS MOD CONTAINS THE FOLLOWING:
+	
+== Charged - Arsenal ==
+	
+\\INFO\\
+From the regal tech-lodges of Gjallarhorn comes an offering of high-end spacer-level melee weapons to suit the melee-centric connoisseur. Utilizing the same pulse-charge technology seeing much use in your favorite charge projectile weapons in a proprietary magnetic confinement shelling process, your favorite melee implements become powerful, high-frequency cutting, stabbing, and bludgeoning weapons that will satisfy you with its combat performance, high-end looks, and ease of use with Gjallarhorn's well-known energy matrix lattice pattern for life-long uptime.
+
+== Charged Arsenal - Eltex Series ==
+	
+\\INFO\\
+From the regal tech-lodges of Gjallarhorn comes an offering of advanced high-end eltex-weaved melee weapons to suit the psionically gifted melee connoisseur. Utilizing the successful magnetic confinement shelling technique to create pulse-charged blades as a baseline, these eltex-weaved melee implements offer excellent combat performance, excellent armor penetration capability, and "sublime psionic flow", the Eltex Series is the choice for any gifted among us.
+
+== Ilya Tech - Core ==
+	
+\\INFO\\
+Adds Variety of Heavy High Tech Technology developed by Ilya Tech from Gjallarhorn Empire.
+
+== Vali's Ancient Crystals - Zaljerem's Continuation ==
+
+\\INFO\\
+An alternative for Medieval Fantasy Heaters and Coolers. Ancient Midgard Crystals are a type of crystal that are said to have originated on a Volcanic/Geo-Active Planet.
+
+STEAM IDs: 2807241532 / 2808676990 / 2800776443 / 2961062673
+
+ORIGINAL MODs: 
+
+https://steamcommunity.com/sharedfiles/filedetails/?id=2807241532
+https://steamcommunity.com/sharedfiles/filedetails/?id=2808676990
+https://steamcommunity.com/sharedfiles/filedetails/?id=2800776443
+https://steamcommunity.com/sharedfiles/filedetails/?id=2961062673
+
+-----------
+CHANGELOG:
+-----------
+
+2023/09/14
+
+- Removed 1.3 version tags and CE stuff. No previous versions or CE here. Period.
+- Combined Charged Arsenal and Eltex Series.
+- Combined Ilya Tech and Vali's Ancient Crystals.
+- Downscaled textures across the board.
+- Tweaked hue and saturation values for Charged Eltex and Eltex Series.
+
+- Changed preview image.
+
+===============
+| XxHyde840xX |
+===============
+	</description>
+	<loadBefore>
+		<li>Victor.PsyUltra</li>
+	</loadBefore>
+</ModMetaData>

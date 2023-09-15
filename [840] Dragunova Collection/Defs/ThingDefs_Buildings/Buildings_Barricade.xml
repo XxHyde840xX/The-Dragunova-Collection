@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs> 
+
+ 
+
+   <!-- Barrier 1x1 -->
+   
+ <ThingDef ParentName="BuildingBase">
+    <defName>SU_BarrierSmall</defName>
+    <label>Small Armored Barrier 1x1</label>
+    <description>a small heavily armored barrier that can hinder vehicles and provide the best cover.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+     <texPath>Things/Buildings/SU_Barricade1x1/SU_Barricade</texPath>
+      <shadowData>
+        <volume>(0.75,0.25,0.75)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.2,0.2,0.2,0.2)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+      </damageData>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.05,1.05)</drawSize>
+      <drawOffset>(0,0,0.05)</drawOffset>
+    </graphicData>
+	<size>(1,1)</size>
+    <uiIconPath>Things/Buildings/SU_Barricade1x1/SU_Barricade_north</uiIconPath>
+    <uiIconScale>1.2</uiIconScale>
+    <altitudeLayer>Building</altitudeLayer>
+    <pathCost>100</pathCost>
+    <pathCostIgnoreRepeat>true</pathCostIgnoreRepeat>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.85</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+	<statBases>
+      <MaxHitPoints>750</MaxHitPoints>
+      <Beauty>2</Beauty>
+      <WorkToBuild>100</WorkToBuild>
+      <Flammability>0.0</Flammability>
+      <Mass>25</Mass>
+	  <ArmorRating_Sharp>1</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+	  <ArmorRating_Heat>10</ArmorRating_Heat>
+    </statBases>
+	<minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <isInert>true</isInert>
+      <isFence>true</isFence>
+      <isPlaceOverableWall>true</isPlaceOverableWall>
+      <blueprintGraphicData>
+        <texPath>Things/Buildings/SU_Barricade1x1/SU_Barricade_north</texPath>
+      </blueprintGraphicData>
+    </building>
+	<costList>
+      <Steel>55</Steel>
+    </costList>
+    <filthLeaving>Filth_RubbleBuilding</filthLeaving>
+	<rotatable>true</rotatable>
+    <researchPrerequisites>
+      <li>IlyaTech</li>
+    </researchPrerequisites>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded> <!-- Best affordance needed for stone -->
+    <designationCategory>Security</designationCategory>
+    <staticSunShadowHeight>0.00</staticSunShadowHeight>
+  </ThingDef>
+  
+<!-- Barrier 2x1 -->
+
+ <ThingDef ParentName="BuildingBase">
+    <defName>SU_BarrierMedium</defName>
+    <label>Armored Barrier 2x1</label>
+    <description>a heavily armored barrier that can hinder vehicles and provide the best cover.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+     <texPath>Things/Buildings/SU_Barricade2x1/SU_Barricade</texPath>
+      <shadowData>
+        <volume>(0.75,0.25,0.75)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.2,0.2,0.2,0.2)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+      </damageData>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.05,2.05)</drawSize>
+      <drawOffset>(0,0,0.05)</drawOffset>
+    </graphicData>
+	<size>(2,1)</size>
+    <uiIconPath>Things/Buildings/SU_Barricade2x1/SU_Barricade_north</uiIconPath>
+    <uiIconScale>1.2</uiIconScale>
+    <altitudeLayer>Building</altitudeLayer>
+    <pathCost>100</pathCost>
+    <pathCostIgnoreRepeat>true</pathCostIgnoreRepeat>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.85</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+	<statBases>
+      <MaxHitPoints>1500</MaxHitPoints>
+      <Beauty>5</Beauty>
+      <WorkToBuild>200</WorkToBuild>
+      <Flammability>0.0</Flammability>
+      <Mass>50</Mass>
+	  <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>1</ArmorRating_Blunt>
+	  <ArmorRating_Heat>10</ArmorRating_Heat>
+    </statBases>
+	<minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <isInert>true</isInert>
+      <isFence>true</isFence>
+      <isPlaceOverableWall>true</isPlaceOverableWall>
+      <blueprintGraphicData>
+        <texPath>Things/Buildings/SU_Barricade2x1/SU_Barricade_north</texPath>
+      </blueprintGraphicData>
+    </building>
+	<costList>
+      <Steel>115</Steel>
+    </costList>
+    <filthLeaving>Filth_RubbleBuilding</filthLeaving>
+	<rotatable>true</rotatable>
+    <researchPrerequisites>
+      <li>IlyaTech</li>
+    </researchPrerequisites>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded> <!-- Best affordance needed for stone -->
+    <designationCategory>Security</designationCategory>
+    <staticSunShadowHeight>0.00</staticSunShadowHeight>
+  </ThingDef>
+  
+  <!-- Barrier 3x1 -->
+
+ <ThingDef ParentName="BuildingBase">
+    <defName>SU_BarrierLarge</defName>
+    <label>Armored Barrier 3x1</label>
+    <description>a long heavily armored barrier that can hinder vehicles and provide the best cover.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+     <texPath>Things/Buildings/SU_Barricade3x1/SU_Barricade</texPath>
+      <shadowData>
+        <volume>(0.75,0.25,0.75)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.2,0.2,0.2,0.2)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+      </damageData>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.05,3.05)</drawSize>
+      <drawOffset>(0,0,0.05)</drawOffset>
+    </graphicData>
+	<size>(3,1)</size>
+    <uiIconPath>Things/Buildings/SU_Barricade3x1/SU_Barricade_north</uiIconPath>
+    <uiIconScale>1.2</uiIconScale>
+    <altitudeLayer>Building</altitudeLayer>
+    <pathCost>100</pathCost>
+    <pathCostIgnoreRepeat>true</pathCostIgnoreRepeat>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.85</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+	<statBases>
+      <MaxHitPoints>1700</MaxHitPoints>
+      <Beauty>6</Beauty>
+      <WorkToBuild>220</WorkToBuild>
+      <Flammability>0.0</Flammability>
+      <Mass>70</Mass>
+	  <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>1</ArmorRating_Blunt>
+	  <ArmorRating_Heat>10</ArmorRating_Heat>
+    </statBases>
+	<minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <isInert>true</isInert>
+      <isFence>true</isFence>
+      <isPlaceOverableWall>true</isPlaceOverableWall>
+      <blueprintGraphicData>
+        <texPath>Things/Buildings/SU_Barricade2x1/SU_Barricade_north</texPath>
+      </blueprintGraphicData>
+    </building>
+	<costList>
+      <Steel>135</Steel>
+    </costList>
+    <filthLeaving>Filth_RubbleBuilding</filthLeaving>
+	<rotatable>true</rotatable>
+    <researchPrerequisites>
+      <li>IlyaTech</li>
+    </researchPrerequisites>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded> <!-- Best affordance needed for stone -->
+    <designationCategory>Security</designationCategory>
+    <staticSunShadowHeight>0.00</staticSunShadowHeight>
+  </ThingDef>
+  
+
+</Defs>

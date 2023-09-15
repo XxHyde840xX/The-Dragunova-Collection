@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  
+  
+    <!-- ====================================== Ilya Tech =========================================== -->
+  
+  <ThingDef Name="SUArmorBase" ParentName="ApparelMakeableBase" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>SU_Bench</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Gold</li>
+          <li>Silver</li>
+          <li>Plasteel</li>
+          <li>Jade</li>
+          <li>Uranium</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
+  </ThingDef>
+  
+  
+  <thingDef ParentName="SUArmorBase">
+    <defName>SU_Defisa</defName>
+    <label>Assault Marine Armor</label>
+    <description>The Mark 2 defisa Assault marine armor is a high tech heavy assault type fused with a thin exoskeleton coated with armor platings and a built in plated skin suit to provide additional movement speed, comfort, and decent insulation while wearing the armor.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData> 
+	<texPath>Things/Apparel/SU_Defisa</texPath>
+    <graphicClass>Graphic_Single</graphicClass> 
+	 <drawSize>0.90</drawSize>
+	</graphicData>
+    <thingCategories>
+      <li>SU_Apparels</li>
+    </thingCategories>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>IlyaTech</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>SU_Bench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Steel>200</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+      <Plasteel>40</Plasteel>
+    </costList>
+    <statBases>
+     <WorkToMake>19000</WorkToMake>
+      <MaxHitPoints>450</MaxHitPoints>
+      <Mass>10</Mass>
+      <Flammability>0</Flammability>
+      <ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.5</ArmorRating_Sharp>
+      <ArmorRating_Heat>1</ArmorRating_Heat>
+			<Insulation_Cold>30</Insulation_Cold>
+			<Insulation_Heat>30</Insulation_Heat>
+      <EquipDelay>8</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>0.3</MoveSpeed>
+    </equippedStatOffsets>
+      <generateCommonality>0.1</generateCommonality>
+    <apparel>
+      <bodyPartGroups>
+		<li>Neck</li>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/SU_Defisa</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>SpacerMilitary</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+  </thingDef>
+  
+
+<thingDef ParentName="SUArmorBase">
+    <defName>SU_Deus</defName>
+    <label>Deus Trench Coat</label>
+    <description>The Deus Coat is a top tier fashion statement. It is made out of poly/nano fabric with leather patches to give off the elitist vibes and has an additional inner lining of soft viscose fabric to hold your comfort needs. The erect round neckline and a front snap tab button closure enhance the simple beauty of this minimalistic design coat. It looks regal with its rich black color and goes with all sorts of dresses!.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData> 
+	<texPath>Things/Apparel/SU_Deus</texPath>
+    <graphicClass>Graphic_Single</graphicClass> 
+	 <drawSize>0.90</drawSize>
+	</graphicData>
+    <thingCategories>
+      <li>SU_Apparels</li>
+    </thingCategories>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>IlyaTech</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>SU_Bench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Cloth>100</Cloth>
+      <Steel>25</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <statBases>
+     <WorkToMake>19000</WorkToMake>
+      <MaxHitPoints>450</MaxHitPoints>
+      <Mass>2</Mass>
+      <Flammability>0</Flammability>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.8</ArmorRating_Heat>
+			<Insulation_Cold>17</Insulation_Cold>
+			<Insulation_Heat>17</Insulation_Heat>
+      <EquipDelay>5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>0.2</MoveSpeed>
+    </equippedStatOffsets>
+      <generateCommonality>0.1</generateCommonality>
+    <apparel>
+      <bodyPartGroups>
+		<li>Neck</li>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/SU_Deus</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+      </layers>
+      <tags>
+        <li>SpacerMilitary</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+  </thingDef>
+  
+  
+<thingDef ParentName="SUArmorBase">
+    <defName>SU_Nanosuit</defName>
+    <label>Aziar Nanosuit</label>
+    <description>The SU-Aziar Nanosuit, is the first iteration of Ilya Tech' line of Nanosuits. providing advanced skin sense feedback and skeletal support to the wearer.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData> 
+	<texPath>Things/Apparel/SU_Nanosuit</texPath>
+    <graphicClass>Graphic_Single</graphicClass> 
+	 <drawSize>0.90</drawSize>
+	</graphicData>
+    <thingCategories>
+      <li>SU_Apparels</li>
+    </thingCategories>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>IlyaTech</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>SU_Bench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Cloth>100</Cloth>
+      <Steel>25</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <statBases>
+     <WorkToMake>19000</WorkToMake>
+      <MaxHitPoints>450</MaxHitPoints>
+      <Mass>1</Mass>
+      <Flammability>0</Flammability>
+      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.6</ArmorRating_Heat>
+			<Insulation_Cold>18</Insulation_Cold>
+			<Insulation_Heat>18</Insulation_Heat>
+      <EquipDelay>5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>0.2</MoveSpeed>
+    </equippedStatOffsets>
+      <generateCommonality>0.1</generateCommonality>
+    <apparel>
+      <bodyPartGroups>
+		<li>Neck</li>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/SU_Nanosuit</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>SpacerMilitary</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+  </thingDef> 
+  
+  
+  <thingDef ParentName="SUArmorBase">
+    <defName>SU_Headhunter</defName>
+    <label>MK 2 Headhunter Helmet</label>
+    <description>A military grade Mark 2 heavy helmet also known as the SV-Headhunter Mark 2 helmet, compelete with HUD and an advanced targeting system desgined to grant more accuracy and precision.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData> 
+	<texPath>Things/Apparel/Helmets/SU_Headhunter</texPath>
+	 <drawSize>0.70</drawSize>
+    <graphicClass>Graphic_Single</graphicClass> 
+	</graphicData>
+    <thingCategories>
+      <li>SU_Helmets</li>
+    </thingCategories>
+    <statBases>
+      <Mass>3</Mass>
+     <WorkToMake>12000</WorkToMake>
+      <MaxHitPoints>175</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <ArmorRating_Blunt>0.67</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.25</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.4</ArmorRating_Heat>
+			<Insulation_Cold>8</Insulation_Cold>
+			<Insulation_Heat>8</Insulation_Heat>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+	  <MoveSpeed>0.25</MoveSpeed> 
+	  <Flammability>0</Flammability>
+      <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.55</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+	  <HuntingStealth>0.45</HuntingStealth>
+    </equippedStatOffsets>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>IlyaTech</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>SU_Bench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Steel>115</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+      <Plasteel>15</Plasteel>
+    </costList>
+      <generateCommonality>0.1</generateCommonality>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Helmets/SU_Headhunter</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>SpacerMilitary</li>
+        <li>RoyalCombatGear</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </thingDef>
+  
+
+  <thingDef ParentName="SUArmorBase">
+    <defName>SU_Marine</defName>
+    <label>MK 2 Marine Helmet</label>
+    <description>The Military grade SVT-Wolverine Mark 2 Marine helmet is a design to grant protection to frontline soldiers, equipped with a HUD and steel armored platings to provide more blunt and sharp protection.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData> 
+	<texPath>Things/Apparel/Helmets/SU_Marine</texPath>
+	 <drawSize>0.70</drawSize>
+    <graphicClass>Graphic_Single</graphicClass> 
+	</graphicData>
+    <thingCategories>
+      <li>SU_Helmets</li>
+    </thingCategories>
+    <statBases>
+      <Mass>3</Mass>
+     <WorkToMake>12000</WorkToMake>
+      <MaxHitPoints>185</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.25</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.6</ArmorRating_Heat>
+			<Insulation_Cold>8</Insulation_Cold>
+			<Insulation_Heat>8</Insulation_Heat>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+	  <MoveSpeed>0.25</MoveSpeed> 
+	  <Flammability>0</Flammability>
+      <AccuracyTouch>0.25</AccuracyTouch>
+      <AccuracyShort>0.20</AccuracyShort>
+      <AccuracyMedium>0.15</AccuracyMedium>
+      <AccuracyLong>0.10</AccuracyLong>
+    </equippedStatOffsets>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>IlyaTech</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>SU_Bench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Steel>150</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+      <Plasteel>15</Plasteel>
+    </costList>
+      <generateCommonality>0.1</generateCommonality>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Helmets/SU_Marine</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>SpacerMilitary</li>
+        <li>RoyalCombatGear</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </thingDef>
+  
+ <thingDef ParentName="SUArmorBase">
+    <defName>SU_Jeager</defName>
+    <label>MK 2 Jeager Helmet</label>
+    <description>The Military grade SVM-Jeager Mark 2 helmet designed for melee combat, it is perfect for wearers who prefer to fight in close quarters, this helmet provides them with high protection againts melee while having decent projectile protection.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData> 
+	<texPath>Things/Apparel/Helmets/SU_Jeager</texPath>
+	 <drawSize>0.70</drawSize>
+    <graphicClass>Graphic_Single</graphicClass> 
+	</graphicData>
+    <thingCategories>
+      <li>SU_Helmets</li>
+    </thingCategories>
+    <statBases>
+      <Mass>3</Mass>
+     <WorkToMake>12000</WorkToMake>
+      <MaxHitPoints>175</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.25</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.4</ArmorRating_Heat>
+			<Insulation_Cold>8</Insulation_Cold>
+			<Insulation_Heat>8</Insulation_Heat>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+			<MoveSpeed>0.25</MoveSpeed> 
+			<Flammability>0</Flammability>
+			<MeleeDodgeChance>0.50</MeleeDodgeChance>
+			<MeleeHitChance>0.50</MeleeHitChance>
+    </equippedStatOffsets>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>IlyaTech</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>SU_Bench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Steel>125</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <Plasteel>15</Plasteel>
+    </costList>
+      <generateCommonality>0.1</generateCommonality>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Helmets/SU_Jeager</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>SpacerMilitary</li>
+        <li>RoyalCombatGear</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </thingDef>
+  
+  
+ <thingDef ParentName="SUArmorBase">
+    <defName>SU_Medic</defName>
+    <label>Medic Helmet</label>
+    <description>The SV-Mercy Mark I medical module helmet designed by Ilya Tech engineers to aid Medical Officers, providing advanced HUD capable of On-The-Spot X-Ray scans, Thermal Scans, and CT-Scans. many people who experience the daily violence on rimworlds have had medics on scene to give accurate and lifesaving diagnosis and lived to tell the tale. "The Doctor is in!".</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData> 
+	<texPath>Things/Apparel/Helmets/SU_Medic</texPath>
+	 <drawSize>0.70</drawSize>
+    <graphicClass>Graphic_Single</graphicClass> 
+	</graphicData>
+    <thingCategories>
+      <li>SU_Helmets</li>
+    </thingCategories>
+    <statBases>
+      <Mass>2</Mass>
+     <WorkToMake>10000</WorkToMake>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.95</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
+			<Insulation_Cold>8</Insulation_Cold>
+			<Insulation_Heat>6</Insulation_Heat>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+			<MoveSpeed>0.15</MoveSpeed> 
+			<Flammability>0</Flammability>
+			<MedicalTendQuality>0.35</MedicalTendQuality>
+			<MedicalSurgerySuccessChance>0.25</MedicalSurgerySuccessChance>
+    </equippedStatOffsets>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>IlyaTech</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>SU_Bench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Steel>125</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+      <generateCommonality>0.1</generateCommonality>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Helmets/SU_Medic</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>SpacerMilitary</li>
+        <li>RoyalCombatGear</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </thingDef>
+  
+  
+ <thingDef ParentName="SUArmorBase">
+    <defName>SU_Patriot</defName>
+    <label>Patriot Helmet</label>
+    <description>A military issue advance police helmet Also known as the SV-Patriot Mark I Helmet. a protective helmet mainly used by the gjallarhorn empire's police security forces completely equipped with a long range radio communication, a voice changer, and night vision.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData> 
+	<texPath>Things/Apparel/Helmets/SU_Patriot</texPath>
+	 <drawSize>0.70</drawSize>
+    <graphicClass>Graphic_Single</graphicClass> 
+	</graphicData>
+    <thingCategories>
+      <li>SU_Helmets</li>
+    </thingCategories>
+    <statBases>
+      <Mass>2</Mass>
+     <WorkToMake>10000</WorkToMake>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.95</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
+			<Insulation_Cold>8</Insulation_Cold>
+			<Insulation_Heat>6</Insulation_Heat>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+			<MoveSpeed>0.15</MoveSpeed> 
+			<Flammability>0</Flammability>
+			<SuppressionPower>0.15</SuppressionPower>
+    </equippedStatOffsets>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>IlyaTech</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>SU_Bench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Steel>125</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+      <generateCommonality>0.1</generateCommonality>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Helmets/SU_Patriot</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>SpacerMilitary</li>
+        <li>RoyalCombatGear</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </thingDef>
+  
+  
+ <thingDef ParentName="SUArmorBase">
+    <defName>SU_Hazard</defName>
+    <label>Hazard Helmet</label>
+    <description>The SV-Chernov Mark 1 is a partriot helmet variant a fully enclosed hazard helmet equipped with Air filters on both sides, Radiation Level Sensors that supports all kind of radiation. the helmet is designed to grant the wearer immunity against all toxic/radiated environments.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData> 
+	<texPath>Things/Apparel/Helmets/SU_Hazard</texPath>
+	 <drawSize>0.70</drawSize>
+    <graphicClass>Graphic_Single</graphicClass> 
+	</graphicData>
+    <thingCategories>
+      <li>SU_Helmets</li>
+    </thingCategories>
+    <statBases>
+      <Mass>2</Mass>
+     <WorkToMake>10000</WorkToMake>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.95</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
+			<Insulation_Cold>8</Insulation_Cold>
+			<Insulation_Heat>6</Insulation_Heat>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+			<MoveSpeed>0.15</MoveSpeed> 
+			<Flammability>0</Flammability>
+			<ToxicResistance>0.50</ToxicResistance>
+			<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
+    </equippedStatOffsets>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>IlyaTech</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>SU_Bench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Steel>125</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <Plasteel>10</Plasteel>
+    </costList>
+      <generateCommonality>0.1</generateCommonality>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Helmets/SU_Hazard</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>SpacerMilitary</li>
+        <li>RoyalCombatGear</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </thingDef>
+  
+
+  
+ <thingDef ParentName="SUArmorBase">
+    <defName>SU_Lockdown</defName>
+    <label>Lockdown Psycaster Helmet</label>
+    <description>The SV-001 Lockdown Mark 1 helmet is a special helmet designed only for psycasters equipped with psy-support systems, boosting the abilities and capabilities of the wearer.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData> 
+	<texPath>Things/Apparel/Helmets/SU_Lockdown</texPath>
+	 <drawSize>0.70</drawSize>
+    <graphicClass>Graphic_Single</graphicClass> 
+	</graphicData>
+    <thingCategories>
+      <li>SU_Helmets</li>
+    </thingCategories>
+    <statBases>
+      <Mass>2</Mass>
+     <WorkToMake>10000</WorkToMake>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.95</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
+			<Insulation_Cold>8</Insulation_Cold>
+			<Insulation_Heat>6</Insulation_Heat>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+			<MoveSpeed>0.15</MoveSpeed> 
+			<Flammability>0</Flammability>
+			<PsychicEntropyMax>0.85</PsychicEntropyMax>
+			<PsychicEntropyRecoveryRate>0.2</PsychicEntropyRecoveryRate>
+			<MeditationFocusGain>0.10</MeditationFocusGain>
+    </equippedStatOffsets>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>IlyaTech</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>SU_Bench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Steel>125</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <Plasteel>8</Plasteel>
+    </costList>
+      <generateCommonality>0.1</generateCommonality>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Helmets/SU_Lockdown</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>SpacerMilitary</li>
+        <li>RoyalCombatGear</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </thingDef>
+  
+  
+<thingDef ParentName="SUArmorBase">
+    <defName>SU_Assault</defName>
+    <label>Ares Assault Helmet</label>
+    <description>The SV-Ares Assault Mark 1 Helmet is a heavily armored helmet capable of witstanding volleys of bullets and the sharpest blades.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData> 
+	<texPath>Things/Apparel/Helmets/SU_Assault</texPath>
+	 <drawSize>0.70</drawSize>
+    <graphicClass>Graphic_Single</graphicClass> 
+	</graphicData>
+    <thingCategories>
+      <li>SU_Helmets</li>
+    </thingCategories>
+    <statBases>
+      <Mass>2</Mass>
+     <WorkToMake>10000</WorkToMake>
+      <MaxHitPoints>165</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <ArmorRating_Blunt>0.58</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.15</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
+			<Insulation_Cold>8</Insulation_Cold>
+			<Insulation_Heat>6</Insulation_Heat>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+			<MoveSpeed>0.15</MoveSpeed> 
+			<Flammability>0</Flammability>
+    </equippedStatOffsets>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>IlyaTech</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>SU_Bench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Steel>135</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <Plasteel>10</Plasteel>
+    </costList>
+      <generateCommonality>0.1</generateCommonality>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Helmets/SU_Assault</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>SpacerMilitary</li>
+        <li>RoyalCombatGear</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </thingDef>
+
+
+
+</Defs>

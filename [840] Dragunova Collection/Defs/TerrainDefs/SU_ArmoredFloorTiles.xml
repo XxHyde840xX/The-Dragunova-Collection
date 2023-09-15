@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TerrainDef Name="SUFloorBase" Abstract="True">
+    <layerable>true</layerable>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+    </affordances>
+    <designationCategory>Floors</designationCategory>
+    <fertility>0</fertility>
+    <constructEffect>ConstructDirt</constructEffect>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+  </TerrainDef>
+
+  <!-- ================= Armored Steel Floor ================= -->
+  <TerrainDef ParentName="SUFloorBase">
+    <defName>SU_ArmoredFloorA</defName>
+    <label>ArmoredSteel Floor A.</label>
+    <renderPrecedence>243</renderPrecedence>
+    <description>This steel paneling is not only durable but easy to clean.  Most refuse slips right through its perforated surface!</description>
+    <texturePath>Terrain/Surfaces/SU_ArmoredSteelFloor1</texturePath>
+    <uiIconPath>Terrain/Surfaces/SU_ArmoredSteelFloor1_Icon</uiIconPath>
+    <pathCost>-3</pathCost>
+    <statBases>
+      <Beauty>2</Beauty>
+      <Cleanliness>0.4</Cleanliness>
+      <WorkToBuild>400</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>3</Steel>
+    </costList>
+    <researchPrerequisites>
+      <li>IlyaTech</li>
+    </researchPrerequisites>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SUFloorBase">
+    <defName>SU_ArmoredFloorB</defName>
+    <label>ArmoredSteel Floor B.</label>
+    <renderPrecedence>243</renderPrecedence>
+    <description>This steel paneling is not only durable but easy to clean.  Most refuse slips right through its perforated surface!</description>
+    <texturePath>Terrain/Surfaces/SU_ArmoredSteelFloor2</texturePath>
+    <uiIconPath>Terrain/Surfaces/SU_ArmoredSteelFloor2_Icon</uiIconPath>
+    <pathCost>-3</pathCost>
+    <statBases>
+      <Beauty>2</Beauty>
+      <Cleanliness>0.4</Cleanliness>
+      <WorkToBuild>400</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>3</Steel>
+    </costList>
+    <researchPrerequisites>
+      <li>IlyaTech</li>
+    </researchPrerequisites>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SUFloorBase">
+    <defName>SU_ArmoredFloorC</defName>
+    <label>ArmoredSteel Floor C.</label>
+    <renderPrecedence>243</renderPrecedence>
+    <description>The .</description>
+    <texturePath>Terrain/Surfaces/SU_ArmoredSteelFloor3</texturePath>
+    <uiIconPath>Terrain/Surfaces/SU_ArmoredSteelFloor3_Icon</uiIconPath>
+    <pathCost>-3</pathCost>
+    <statBases>
+      <Beauty>2</Beauty>
+      <Cleanliness>0.4</Cleanliness>
+      <WorkToBuild>400</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>3</Steel>
+    </costList>
+    <researchPrerequisites>
+      <li>IlyaTech</li>
+    </researchPrerequisites>
+  </TerrainDef>
+
+  <!-- ================= Armored Grating Floor ================= -->
+  <TerrainDef ParentName="SUFloorBase">
+    <defName>SU_ArmoredGratingA</defName>
+    <label>Armored Grating A.</label>
+    <renderPrecedence>243</renderPrecedence>
+    <description>This armored steel grating is designed to not only be durable but also easy to clean.  Most refuse slips right through its perforated surface and boost running speed.</description>
+    <texturePath>Terrain/Surfaces/SU_ArmoredGrating1</texturePath>
+    <uiIconPath>Terrain/Surfaces/SU_ArmoredGrating1_Icon</uiIconPath>
+    <pathCost>-4</pathCost>
+    <statBases>
+      <Beauty>2</Beauty>
+      <Cleanliness>0.1</Cleanliness>
+      <WorkToBuild>400</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>2</Steel>
+    </costList>
+    <researchPrerequisites>
+      <li>IlyaTech</li>
+    </researchPrerequisites>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SUFloorBase">
+    <defName>SU_ArmoredGratingB</defName>
+    <label>Armored Grating B.</label>
+    <renderPrecedence>243</renderPrecedence>
+    <description>This armored steel grating is designed to not only be durable but also easy to clean.  Most refuse slips right through its perforated surface and boost running speed.</description>
+    <texturePath>Terrain/Surfaces/SU_ArmoredGrating2</texturePath>
+    <uiIconPath>Terrain/Surfaces/SU_ArmoredGrating2_Icon</uiIconPath>
+    <pathCost>-4</pathCost>
+    <statBases>
+      <Beauty>2</Beauty>
+      <Cleanliness>0.1</Cleanliness>
+      <WorkToBuild>400</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>2</Steel>
+    </costList>
+    <researchPrerequisites>
+      <li>IlyaTech</li>
+    </researchPrerequisites>
+  </TerrainDef>  
+  
+  
+  <!-- ================= Armored Sterile Floor ================= -->
+  <TerrainDef ParentName="SUFloorBase">
+    <defName>SU_ArmoredFloorSterile</defName>
+    <label>Armored Sterile Floor</label>
+    <renderPrecedence>243</renderPrecedence>
+    <description>This high-tech armored floor is suitable for use in sterile environments. The simple design is also pleasing to look at.</description>
+    <texturePath>Terrain/Surfaces/SU_ArmoredSterileFloor</texturePath>
+    <uiIconPath>Terrain/Surfaces/SU_ArmoredSterileFloor_Icon</uiIconPath>
+    <pathCost>-5</pathCost>
+    <statBases>
+      <Beauty>3</Beauty>
+      <Cleanliness>0.6</Cleanliness>
+      <WorkToBuild>900</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>3</Steel>
+      <Silver>10</Silver>
+    </costList>
+    <researchPrerequisites>
+      <li>IlyaTech</li>
+    </researchPrerequisites>
+  </TerrainDef>
+
+  
+  
+</Defs>

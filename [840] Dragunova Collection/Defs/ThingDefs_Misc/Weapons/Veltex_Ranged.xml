@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="BaseEltexGunBlade" Abstract="True" ParentName="BaseWeapon">
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Biocodable"/>
+    </comps>
+    <burnableByRecipe>true</burnableByRecipe>
+    <thingCategories>
+      <li>V_EltexSeries</li>
+    </thingCategories>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+
+
+	
+ <ThingDef ParentName="BaseEltexGunBlade">
+    <defName>V_AnimaGunBlade</defName>
+    <label>charge eltex gunblade</label>
+    <description>A unique eltex-weaved weapon utilizing pulse-charge technology. Using a brand-new duplex-inversion process to quickly revert a generated pulse-blade into a usable pulse-charged shot, Gjallarhorn tech-lodges have produced this unique fusion between both gun and blade, twin-barreled for maximum firepower. The inversion process takes time and thusly results in a slower rate of fire as well as range, but no psycaster would complain for the sheer flexibility and flow of such a weapon.</description>
+    <techLevel>Spacer</techLevel>
+    <meleeHitSound>Heavy_Katana</meleeHitSound>
+    <graphicData>
+      <texPath>Things/Weapons/V_AnimaGunBlade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.5</drawSize>
+      <drawOffsetSouth>(0.2,0,0)</drawOffsetSouth>
+      <drawOffsetNorth>(0.2,0,0)</drawOffsetNorth>
+      <drawOffsetEast>(0.2,0,0)</drawOffsetEast>
+      <drawOffsetWest>(0.2,0,0)</drawOffsetWest>
+    </graphicData>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <MarketValue>1700</MarketValue>
+      <Mass>4</Mass>
+      <AccuracyTouch>0.8</AccuracyTouch>
+      <AccuracyShort>0.6</AccuracyShort>
+      <AccuracyMedium>0.5</AccuracyMedium>
+      <AccuracyLong>0.4</AccuracyLong>
+      <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedStatOffsets>
+		<PsychicEntropyMax>14</PsychicEntropyMax>
+		<PsychicEntropyRecoveryRate>0.20</PsychicEntropyRecoveryRate>
+		<MeditationFocusGain>0.15</MeditationFocusGain>
+        <PsychicSensitivity>0.20</PsychicSensitivity>
+    </equippedStatOffsets>
+    <weaponTags>
+      <li>V_GunBlade</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_AnimGunBlade</defaultProjectile>
+        <warmupTime>2</warmupTime>
+        <range>22</range>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <burstShotCount>2</burstShotCount>
+        <soundCast>GunBladeHeavy</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>22.5</power>
+        <cooldownTime>1.6</cooldownTime>
+        <armorPenetration>0.65</armorPenetration>
+      </li>
+      <li>
+        <label>gunblade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>18.8</power>
+        <cooldownTime>1.2</cooldownTime>
+        <armorPenetration>0.45</armorPenetration>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_AnimGunBlade</defName>
+    <label>eltex gunblade shot</label>
+    <graphicData>
+      <texPath>Bullets/GunBlade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+      <armorPenetrationBase>0.45</armorPenetrationBase>
+      <speed>85</speed>
+    </projectile>
+  </ThingDef>
+  
+  
+  
+<ThingDef ParentName="BaseEltexGunBlade">
+    <defName>V_AnimaShortGunBlade</defName>
+    <label>charge short eltex gunblade</label>
+    <description>A unique eltex-weaved weapon utilizing pulse-charge technology. An attempt at miniaturizing the utilized duplex-inversion process has resulted in a rotary chamber design, compact enough to fit into a short sword frame. Users report the natural ergonomics of "spinning the chamber" to initiate the inversion process to fire a shot satisfying to execute, and is a favorite choice among many of the psy-gifted.</description>
+    <techLevel>Spacer</techLevel>
+    <meleeHitSound>Heavy_Katana</meleeHitSound>
+    <graphicData>
+      <texPath>Things/Weapons/V_AnimaShortGunBlade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.2</drawSize>
+      <drawOffsetSouth>(0.1,0,0)</drawOffsetSouth>
+      <drawOffsetNorth>(0.1,0,0)</drawOffsetNorth>
+      <drawOffsetEast>(0.1,0,0)</drawOffsetEast>
+      <drawOffsetWest>(0.1,0,0)</drawOffsetWest>
+    </graphicData>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <MarketValue>1600</MarketValue>
+      <Mass>3</Mass>
+      <AccuracyTouch>0.8</AccuracyTouch>
+      <AccuracyShort>0.6</AccuracyShort>
+      <AccuracyMedium>0.5</AccuracyMedium>
+      <AccuracyLong>0.4</AccuracyLong>
+      <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedStatOffsets>
+		<PsychicEntropyMax>12</PsychicEntropyMax>
+		<PsychicEntropyRecoveryRate>0.20</PsychicEntropyRecoveryRate>
+		<MeditationFocusGain>0.15</MeditationFocusGain>
+        <PsychicSensitivity>0.15</PsychicSensitivity>
+    </equippedStatOffsets>
+    <weaponTags>
+      <li>V_GunBlade</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_AnimGunBladeShort</defaultProjectile>
+        <warmupTime>1.8</warmupTime>
+        <range>15</range>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>GunBladeLight</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>19.5</power>
+        <cooldownTime>1.6</cooldownTime>
+        <armorPenetration>0.55</armorPenetration>
+      </li>
+      <li>
+        <label>gunblade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>16.5</power>
+        <cooldownTime>1.2</cooldownTime>
+        <armorPenetration>0.40</armorPenetration>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_AnimGunBladeShort</defName>
+    <label>eltex gunblade shot</label>
+    <graphicData>
+      <texPath>Bullets/GunBlade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>18</damageAmountBase>
+      <armorPenetrationBase>0.43</armorPenetrationBase>
+      <speed>80</speed>
+    </projectile>
+  </ThingDef>
+  
+</Defs>

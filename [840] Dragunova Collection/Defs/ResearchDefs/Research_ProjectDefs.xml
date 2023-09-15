@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ResearchProjectTagDef>
+		<defName>IlyaStart</defName>
+	</ResearchProjectTagDef>
+
+	<ResearchTabDef>
+		<defName>Ilya_technology</defName>
+		<label>Ilya Technology</label>
+	</ResearchTabDef>
+
+	<ResearchProjectDef>
+		<defName>IlyaTech</defName>
+		<label>Ilya Tech.</label>
+		<description>Unlock Ilya's powerful developed Technology.</description>
+		<tab>Ilya_technology</tab>
+		<baseCost>12900</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>Fabrication</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>0</researchViewX>
+		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+	
+</Defs>

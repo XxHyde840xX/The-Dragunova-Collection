@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=================================== AP Cartridges ==========================================-->
+
+  <RecipeDef>
+    <defName>Make_SU_AP</defName>
+    <label>Craft AP Cartridges</label>
+    <description>Make AP Cartridges.</description>
+    <jobString>Making AP Cartridges.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>5000</workAmount>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>125</count>
+      </li>
+    </ingredients>
+    <products>
+      <SU_ContainerAP>75</SU_ContainerAP>
+    </products>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>IlyaTech</researchPrerequisite>
+  </RecipeDef>
+  
+  <!--=================================== HE Cartridges ==========================================-->
+
+  <RecipeDef>
+    <defName>Make_SU_HE</defName>
+    <label>Craft HE Cartridges</label>
+    <description>Make HE Cartridges.</description>
+    <jobString>Making HE Cartridges.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>5000</workAmount>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>60</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <products>
+      <SU_ContainerHE>30</SU_ContainerHE>
+    </products>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>IlyaTech</researchPrerequisite>
+  </RecipeDef>
+  
+</Defs>

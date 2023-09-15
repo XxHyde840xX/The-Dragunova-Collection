@@ -1,0 +1,472 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+
+  
+    <!--========== Eltex Weapons ==========--> 
+  
+  <ThingDef ParentName="MeleeWeaponUltratech">
+    <defName>V_AnimaHammer</defName>
+    <label>charge eltex warhammer</label>
+    <description>An eltex-weaved warhammer utilizing pulse-charge technology. Maximizing a known magnetic confinement quirk, this eltex-weaved warhammer is the choice for high impact force, strong enough to get through armor, alongside reported high performance in psionic support. A knockout first offering making a smashing impression.</description>
+    <meleeHitSound>Heavy_Blunt</meleeHitSound>
+	<soundInteract>Interact_ChargeRifle</soundInteract>
+    <equippedAngleOffset>-10</equippedAngleOffset>
+	<smeltable>false</smeltable>
+    <thingCategories>
+      <li>V_EltexSeries</li>
+    </thingCategories>
+    <weaponClasses>
+      <li>MeleeBlunt</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>V_EltexMelee</li>
+    </weaponTags>
+    <thingSetMakerTags>
+        <li>RewardStandardMidFreq</li>
+        <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <graphicData>
+      <texPath>Things/Weapons/V_AnimaHammer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.6</drawSize>
+      <drawOffsetSouth>(0.3,0,0)</drawOffsetSouth>
+      <drawOffsetNorth>(0.3,0,0)</drawOffsetNorth>
+      <drawOffsetEast>(0.3,0,0)</drawOffsetEast>
+      <drawOffsetWest>(0.3,0,0)</drawOffsetWest>
+    </graphicData>
+    <tools>
+      <li>
+        <label>hammer handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>hammer face</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>28</power>
+        <cooldownTime>2.4</cooldownTime>
+        <armorPenetration>0.65</armorPenetration>
+      </li>
+    </tools>
+	<statBases>
+	  <MarketValue>1800</MarketValue>
+      <Mass>5</Mass>
+    </statBases>
+    <equippedStatOffsets>
+		<PsychicEntropyMax>15</PsychicEntropyMax>
+		<PsychicEntropyRecoveryRate>0.20</PsychicEntropyRecoveryRate>
+		<MeditationFocusGain>0.15</MeditationFocusGain>
+        <PsychicSensitivity>0.23</PsychicSensitivity>
+    </equippedStatOffsets>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="MeleeWeaponUltratech">
+    <defName>V_AnimaStaff</defName>
+    <label>charge eltex staff</label>
+    <description>An eltex-weaved staff utilizing pulse-charge technology. Combining both miniaturizing magnetic confinement as well as maximizing directionality in impact resonance, this staff liberally weaved with eltex, is the choice for a choice weapon that is fast, subdued and easily stored due to its compacting nature. One for the psycasting traveler in all of us.</description>
+	<soundInteract>Interact_ChargeRifle</soundInteract>
+    <equippedAngleOffset>-10</equippedAngleOffset>
+	<smeltable>false</smeltable>
+    <thingCategories>
+      <li>V_EltexSeries</li>
+    </thingCategories>
+    <weaponClasses>
+      <li>MeleeBlunt</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>V_EltexMelee</li>
+    </weaponTags>
+    <thingSetMakerTags>
+        <li>RewardStandardMidFreq</li>
+        <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <graphicData>
+      <texPath>Things/Weapons/V_AnimaStaff</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.4</drawSize>
+    </graphicData>
+    <tools>
+      <li>
+        <label>staff top edge</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1.4</cooldownTime>
+        <armorPenetration>0.4</armorPenetration>
+      </li>
+      <li>
+        <label>staff bottom edge</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1.4</cooldownTime>
+        <armorPenetration>0.4</armorPenetration>
+      </li>
+    </tools>
+	<statBases>
+	  <MarketValue>1000</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+    <equippedStatOffsets>
+		<PsychicEntropyMax>10</PsychicEntropyMax>
+		<PsychicEntropyRecoveryRate>0.20</PsychicEntropyRecoveryRate>
+		<MeditationFocusGain>0.15</MeditationFocusGain>
+        <PsychicSensitivity>0.18</PsychicSensitivity>
+    </equippedStatOffsets>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="MeleeWeaponUltratech">
+    <defName>V_AnimaMace</defName>
+    <label>charge eltex mace</label>
+    <description>An eltex-weaved mace utilizing pulse-charge technology. Utilizing both polar magneto-confinement and miniaturization, this bladed mace delivers best-in-class armor penetration across much of the Eltex Series, perfect for when it is time to lay down the hurt and one's gifts were not enough encouragement.</description>
+	<soundInteract>Interact_ChargeRifle</soundInteract>
+    <equippedAngleOffset>-10</equippedAngleOffset>
+	<smeltable>false</smeltable>
+    <thingCategories>
+      <li>V_EltexSeries</li>
+    </thingCategories>
+    <weaponClasses>
+      <li>MeleeBlunt</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>V_EltexMelee</li>
+    </weaponTags>
+    <thingSetMakerTags>
+        <li>RewardStandardMidFreq</li>
+        <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <graphicData>
+      <texPath>Things/Weapons/V_AnimaMace</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.2</drawSize>
+      <drawOffsetSouth>(0.2,0,0)</drawOffsetSouth>
+      <drawOffsetNorth>(0.2,0,0)</drawOffsetNorth>
+      <drawOffsetEast>(0.2,0,0)</drawOffsetEast>
+      <drawOffsetWest>(0.2,0,0)</drawOffsetWest>
+    </graphicData>
+    <tools>
+      <li>
+        <label>mace head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>26</power>
+        <cooldownTime>1.6</cooldownTime>
+        <armorPenetration>0.55</armorPenetration>
+      </li>
+      <li>
+        <label>mace handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.4</cooldownTime>
+      </li>
+    </tools>
+	<statBases>
+	  <MarketValue>1400</MarketValue>
+      <Mass>3</Mass>
+    </statBases>
+    <equippedStatOffsets>
+		<PsychicEntropyMax>12</PsychicEntropyMax>
+		<PsychicEntropyRecoveryRate>0.20</PsychicEntropyRecoveryRate>
+		<MeditationFocusGain>0.15</MeditationFocusGain>
+        <PsychicSensitivity>0.17</PsychicSensitivity>
+    </equippedStatOffsets>
+  </ThingDef>
+  
+  
+   <ThingDef ParentName="MeleeWeaponUltratech">
+    <defName>V_AnimaDagger</defName>
+    <label>charge eltex dagger</label>
+    <description>An eltex-weaved dagger utilizing pulse-charge technology. Miniaturized magnetic confinement with eltex weaving creates a small, fast blade that would kill in both looks and works, and is a popular choice for many a psycaster keeping it on the down-low.</description>
+	<soundInteract>Interact_ChargeRifle</soundInteract>
+    <equippedAngleOffset>-10</equippedAngleOffset>
+	<smeltable>false</smeltable>
+    <thingCategories>
+      <li>V_EltexSeries</li>
+    </thingCategories>
+    <weaponClasses>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>V_EltexMelee</li>
+    </weaponTags>
+    <thingSetMakerTags>
+        <li>RewardStandardMidFreq</li>
+        <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <graphicData>
+      <texPath>Things/Weapons/V_AnimaDagger</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+    <tools>
+      <li>
+        <label>handle blade</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>1.2</cooldownTime>
+        <armorPenetration>0.71</armorPenetration>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>0.8</cooldownTime>
+        <armorPenetration>0.62</armorPenetration>
+      </li>
+    </tools>
+	<statBases>
+	  <MarketValue>1000</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+    <equippedStatOffsets>
+		<PsychicEntropyMax>8</PsychicEntropyMax>
+		<PsychicEntropyRecoveryRate>0.10</PsychicEntropyRecoveryRate>
+		<MeditationFocusGain>0.10</MeditationFocusGain>
+        <PsychicSensitivity>0.14</PsychicSensitivity>
+    </equippedStatOffsets>
+  </ThingDef>
+  
+  
+   <ThingDef ParentName="MeleeWeaponUltratech">
+    <defName>V_AnimaLongSword</defName>
+    <label>charge eltex longsword</label>
+    <description>An eltex-weaved longsword utilizing pulse-charge technology. Utilizing unique polar magneto-cycling to produce a high-efficiency double-sided pulse-blade, the eltex weaving leads to enhancements in both pulse-blade efficiency as well as psionic flow. An eye-catching offering that stands as a gold standard of the Eltex Series.</description>
+	<soundInteract>Interact_ChargeRifle</soundInteract>
+    <equippedAngleOffset>-10</equippedAngleOffset>
+	<smeltable>false</smeltable>
+    <thingCategories>
+      <li>V_EltexSeries</li>
+    </thingCategories>
+    <weaponClasses>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>V_EltexMelee</li>
+    </weaponTags>
+    <thingSetMakerTags>
+        <li>RewardStandardMidFreq</li>
+        <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <graphicData>
+      <texPath>Things/Weapons/V_AnimaLongSword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.2</drawSize>
+      <drawOffsetSouth>(0.2,0,0)</drawOffsetSouth>
+      <drawOffsetNorth>(0.2,0,0)</drawOffsetNorth>
+      <drawOffsetEast>(0.2,0,0)</drawOffsetEast>
+      <drawOffsetWest>(0.2,0,0)</drawOffsetWest>
+    </graphicData>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>1.8</cooldownTime>
+        <armorPenetration>0.71</armorPenetration>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>1.6</cooldownTime>
+        <armorPenetration>0.62</armorPenetration>
+      </li>
+    </tools>
+	<statBases>
+	  <MarketValue>1250</MarketValue>
+      <Mass>2</Mass>
+    </statBases>
+    <equippedStatOffsets>
+		<PsychicEntropyMax>12</PsychicEntropyMax>
+		<PsychicEntropyRecoveryRate>0.18</PsychicEntropyRecoveryRate>
+		<MeditationFocusGain>0.15</MeditationFocusGain>
+        <PsychicSensitivity>0.16</PsychicSensitivity>
+    </equippedStatOffsets>
+  </ThingDef>
+  
+  
+   <ThingDef ParentName="MeleeWeaponUltratech">
+    <defName>V_AnimaKatana</defName>
+    <label>charge eltex katana</label>
+    <description>An eltex-weaved blade utilizing pulse-charge technology forged into the style of a katana. The most elegant of sword styles, the pulse-blade utilizes a unique interaction with eltex to form a tight, coherent blade, folding its magnetic shell repeatedly over itself a thousand times. Nanoscale cutting capability combined with light weight makes this a fast, deadly sword that would make even the most incompetent of sword swingers into a blademaster of psionic renown.</description>
+	<soundInteract>Interact_ChargeRifle</soundInteract>
+    <equippedAngleOffset>-10</equippedAngleOffset>
+	<smeltable>false</smeltable>
+    <thingCategories>
+      <li>V_EltexSeries</li>
+    </thingCategories>
+    <weaponClasses>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>V_EltexMelee</li>
+    </weaponTags>
+    <thingSetMakerTags>
+        <li>RewardStandardMidFreq</li>
+        <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <graphicData>
+      <texPath>Things/Weapons/V_AnimaKatana</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.2</drawSize>
+      <drawOffsetSouth>(0.2,0,0)</drawOffsetSouth>
+      <drawOffsetNorth>(0.2,0,0)</drawOffsetNorth>
+      <drawOffsetEast>(0.2,0,0)</drawOffsetEast>
+      <drawOffsetWest>(0.2,0,0)</drawOffsetWest>
+    </graphicData>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>24.3</power>
+        <cooldownTime>1.4</cooldownTime>
+        <armorPenetration>0.70</armorPenetration>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>19</power>
+        <cooldownTime>1.1</cooldownTime>
+        <armorPenetration>0.60</armorPenetration>
+      </li>
+    </tools>
+	<statBases>
+	  <MarketValue>1200</MarketValue>
+      <Mass>2</Mass>
+    </statBases>
+    <equippedStatOffsets>
+		<PsychicEntropyMax>10</PsychicEntropyMax>
+		<PsychicEntropyRecoveryRate>0.18</PsychicEntropyRecoveryRate>
+		<MeditationFocusGain>0.15</MeditationFocusGain>
+        <PsychicSensitivity>0.20</PsychicSensitivity>
+    </equippedStatOffsets>
+  </ThingDef>
+  
+  
+   <ThingDef ParentName="MeleeWeaponUltratech">
+    <defName>V_AnimaSpearLance</defName>
+    <label>charge eltex spearlance</label>
+    <description>An eltex-weaved spearlance utilizing pulse-charge technology. Maximizing the unique interaction with eltex and Gjallarhorn's proprietary magnetic shell pulse-blade generation method leads to this high-performance longarm, deadly in both mundane and psionic. "They claimed to have forgotten the face of death. Worry not for my wielder will re-acquaint you to it."</description>
+	<soundInteract>Interact_ChargeRifle</soundInteract>
+    <equippedAngleOffset>-10</equippedAngleOffset>
+	<smeltable>false</smeltable>
+    <thingCategories>
+      <li>V_EltexSeries</li>
+    </thingCategories>
+    <relicChance>3</relicChance>
+    <weaponClasses>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>V_EltexMelee</li>
+    </weaponTags>
+    <thingSetMakerTags>
+        <li>RewardStandardMidFreq</li>
+        <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <graphicData>
+      <texPath>Things/Weapons/V_AnimaSpearLance</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.6</drawSize>
+      <drawOffsetSouth>(0.3,0,0)</drawOffsetSouth>
+      <drawOffsetNorth>(0.3,0,0)</drawOffsetNorth>
+      <drawOffsetEast>(0.3,0,0)</drawOffsetEast>
+      <drawOffsetWest>(0.3,0,0)</drawOffsetWest>
+    </graphicData>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>23</power>
+        <cooldownTime>1.6</cooldownTime>
+        <armorPenetration>0.75</armorPenetration>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>1.5</cooldownTime>
+        <armorPenetration>0.63</armorPenetration>
+      </li>
+    </tools>
+	<statBases>
+	  <MarketValue>1900</MarketValue>
+      <Mass>2</Mass>
+    </statBases>
+    <equippedStatOffsets>
+		<PsychicEntropyMax>14</PsychicEntropyMax>
+		<PsychicEntropyRecoveryRate>0.18</PsychicEntropyRecoveryRate>
+		<MeditationFocusGain>0.15</MeditationFocusGain>
+        <PsychicSensitivity>0.20</PsychicSensitivity>
+    </equippedStatOffsets>
+  </ThingDef>
+
+</Defs>

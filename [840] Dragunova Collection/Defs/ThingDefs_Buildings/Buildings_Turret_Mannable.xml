@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <!--=============== Eclair ===============-->
+
+  <ThingDef ParentName="BuildingBase" Name="Eclair"  Abstract="True"> 
+    <thingClass>Building_TurretGun</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Buildings/SU_Eclair/SU_EclairBase</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>    
+    <altitudeLayer>Building</altitudeLayer>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <stealable>false</stealable>
+    <size>(3,1)</size>
+    <statBases>
+      <MaxHitPoints>1500</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <WorkToBuild>85000</WorkToBuild>
+      <Mass>80</Mass>
+      <Beauty>8</Beauty>
+	  <ArmorRating_Sharp>1</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+	  <ArmorRating_Heat>10</ArmorRating_Heat>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.90</fillPercent>
+    <hasTooltip>true</hasTooltip>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <specialDisplayRadius>3</specialDisplayRadius>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <building>
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretTopDrawSize>2.8</turretTopDrawSize>
+      <turretTopOffset>(0, 0.1)</turretTopOffset>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_TurretTop</li>
+      <li>PlaceWorker_ShowTurretRadius</li>
+    </placeWorkers>
+    <designationHotKey>Misc3</designationHotKey>    
+    <uiIconScale>0.95</uiIconScale>
+    <rotatable>true</rotatable>
+  </ThingDef>
+
+  <ThingDef ParentName="Eclair">
+    <defName>Turret_Eclair</defName>
+    <label>Eclair Nest</label>
+    <description>A heavily fortified machinegun nest with armored barricades, capable of suppressing small groups while providing complete protection. Needs to be manned.</description>
+    <uiIconPath>Things/Buildings/SU_Eclair/SU_Eclair_Icon</uiIconPath>
+    <uiIconScale>1</uiIconScale>
+    <statBases>
+      <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret> <!-- like level 8 human shooter -->
+    </statBases>
+    <costList>
+      <Steel>250</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Mannable">
+        <manWorkType>Violent</manWorkType>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shots until drum is empty</fuelLabel>
+        <fuelGizmoLabel>Bullets Remaining</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>SU_ContainerAP</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>175</fuelCapacity>
+        <initialFuelPercent>1</initialFuelPercent>
+        <autoRefuelPercent>0.1667</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <atomicFueling>true</atomicFueling>
+        <fuelMultiplier>1</fuelMultiplier>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Needs Ammo</outOfFuelMessage>
+        <fuelIconPath>Things/Buildings/Yoink_AP</fuelIconPath>
+      </li>
+    </comps>
+    <building>
+      <turretGunDef>Gun_EclairMG</turretGunDef>
+      <turretBurstCooldownTime>2.5</turretBurstCooldownTime>
+      <turretBurstWarmupTime>1.5</turretBurstWarmupTime>
+    </building>
+	<researchPrerequisites>
+	  <li>IlyaTech</li>
+	</researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Eclair</defName>
+    <label>Eclair bullet</label>
+    <graphicData>
+      <texPath>Things/Bullets/SU_EclairBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.4</drawSize>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>18</damageAmountBase>
+      <armorPenetrationBase>1.8</armorPenetrationBase>
+      <speed>95</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>Gun_EclairMG</defName>
+    <label>eclair gun</label>
+    <description>A belt-fed heavy machine gun that fires massive calibers.</description>
+    <graphicData>
+      <texPath>Things/Buildings/SU_Eclair/SU_EclairTop</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <statBases>
+      <AccuracyTouch>0.7</AccuracyTouch>
+      <AccuracyShort>0.8</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.45</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>15</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>Bullet_Eclair</defaultProjectile>
+        <warmupTime>20</warmupTime>
+        <minRange>3</minRange>
+        <range>38</range>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <burstShotCount>20</burstShotCount>
+        <soundCast>Shot_Eclair</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+  </ThingDef>
+  
+  <!--=============== Altair ===============-->
+
+  <ThingDef ParentName="BuildingBase" Name="Altair"  Abstract="True"> 
+    <thingClass>Building_TurretGun</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Buildings/SU_Altair/SU_AltairBase</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>    
+    <altitudeLayer>Building</altitudeLayer>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <stealable>false</stealable>
+    <size>(3,1)</size>
+    <statBases>
+      <MaxHitPoints>1500</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <WorkToBuild>85000</WorkToBuild>
+      <Mass>80</Mass>
+      <Beauty>8</Beauty>
+	  <ArmorRating_Sharp>1</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+	  <ArmorRating_Heat>10</ArmorRating_Heat>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.90</fillPercent>
+    <hasTooltip>true</hasTooltip>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <specialDisplayRadius>5</specialDisplayRadius>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <building>
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretTopDrawSize>2.8</turretTopDrawSize>
+      <turretTopOffset>(0, 0.1)</turretTopOffset>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_TurretTop</li>
+      <li>PlaceWorker_ShowTurretRadius</li>
+    </placeWorkers>
+    <designationHotKey>Misc3</designationHotKey>    
+    <uiIconScale>0.95</uiIconScale>
+    <rotatable>true</rotatable>
+  </ThingDef>
+
+  <ThingDef ParentName="Altair">
+    <defName>Turret_Altair</defName>
+    <label>Altair Nest</label>
+    <description>A heavily fortified grenade launcher nest with armored barricades, capable of suppressing small groups while providing complete protection. Needs to be manned.</description>
+    <uiIconPath>Things/Buildings/SU_Altair/SU_Altair_Icon</uiIconPath>
+    <uiIconScale>1</uiIconScale>
+    <statBases>
+      <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret> <!-- like level 8 human shooter -->
+    </statBases>
+    <costList>
+      <Steel>225</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Mannable">
+        <manWorkType>Violent</manWorkType>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shots until drum is empty</fuelLabel>
+        <fuelGizmoLabel>Bullets Remaining</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>SU_ContainerHE</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>80</fuelCapacity>
+        <initialFuelPercent>1</initialFuelPercent>
+        <autoRefuelPercent>0.1667</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <atomicFueling>true</atomicFueling>
+        <fuelMultiplier>1</fuelMultiplier>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Needs Ammo</outOfFuelMessage>
+        <fuelIconPath>Things/Buildings/Yoink_HE</fuelIconPath>
+      </li>
+    </comps>
+    <building>
+      <turretGunDef>Gun_AltairMG</turretGunDef>
+      <turretBurstCooldownTime>2.5</turretBurstCooldownTime>
+      <turretBurstWarmupTime>1.3</turretBurstWarmupTime>
+    </building>
+	<researchPrerequisites>
+	  <li>IlyaTech</li>
+	</researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Altair</defName>
+    <label>Altair bullet</label>
+    <graphicData>
+      <texPath>Things/Bullets/SU_AltairBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <speed>60</speed>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>16</damageAmountBase>
+      <explosionRadius>2</explosionRadius>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>Gun_AltairMG</defName>
+    <label>altair gun</label>
+    <description>A belt-fed heavy machine gun that fires explosive rounds.</description>
+    <graphicData>
+      <texPath>Things/Buildings/SU_Altair/SU_AltairTop</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <statBases>
+      <AccuracyTouch>0.7</AccuracyTouch>
+      <AccuracyShort>0.8</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.45</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>15</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>Bullet_Altair</defaultProjectile>
+        <warmupTime>20</warmupTime>
+        <minRange>5</minRange>
+        <range>32</range>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+        <soundCast>Shot_Altair</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+        <forcedMissRadius>1</forcedMissRadius>
+      </li>
+    </verbs>
+  </ThingDef>
+  
+  <!--=============== Liberio ===============-->
+
+  <ThingDef ParentName="BuildingBase" Name="Liberio"  Abstract="True"> 
+    <thingClass>Building_TurretGun</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Buildings/SU_Liberio/SU_MediumTurretBase</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>    
+    <altitudeLayer>Building</altitudeLayer>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+    <stealable>false</stealable>
+    <size>(3,3)</size>
+    <statBases>
+      <MaxHitPoints>1900</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <WorkToBuild>99500</WorkToBuild>
+      <Mass>180</Mass>
+      <Beauty>10</Beauty>
+	  <ArmorRating_Sharp>2</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>1.5</ArmorRating_Blunt>
+	  <ArmorRating_Heat>20</ArmorRating_Heat>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.90</fillPercent>
+    <hasTooltip>true</hasTooltip>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <specialDisplayRadius>10</specialDisplayRadius>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <building>
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretTopDrawSize>4.8</turretTopDrawSize>
+      <turretTopOffset>(0,1)</turretTopOffset>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_TurretTop</li>
+      <li>PlaceWorker_ShowTurretRadius</li>
+    </placeWorkers>
+    <designationHotKey>Misc3</designationHotKey>    
+    <uiIconScale>0.95</uiIconScale>
+    <rotatable>true</rotatable>
+  </ThingDef>
+
+  <ThingDef ParentName="Liberio">
+    <defName>Turret_Liberio</defName>
+    <label>Liberio</label>
+    <description>The Liberio is a powerful heavily armored long range Anti Armor cannon, designed to destroy heavily armored targets or groups of enemies, has a high tech autoloader that stacks up 8 shells. Needs to be manned.</description>
+    <uiIconPath>Things/Buildings/SU_Liberio/SU_Liberio_Icon</uiIconPath>
+    <uiIconScale>1</uiIconScale>
+    <statBases>
+      <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret> <!-- like level 8 human shooter -->
+    </statBases>
+    <costList>
+      <Steel>575</Steel>
+      <ComponentIndustrial>10</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Mannable">
+        <manWorkType>Violent</manWorkType>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shots until container is empty</fuelLabel>
+        <fuelGizmoLabel>Shells Remaining</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>SU_HE_Shells</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>8</fuelCapacity>
+        <initialFuelPercent>1</initialFuelPercent>
+        <autoRefuelPercent>0.1667</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <atomicFueling>true</atomicFueling>
+        <fuelMultiplier>1</fuelMultiplier>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Needs new barrel</outOfFuelMessage>
+        <fuelIconPath>Things/Buildings/Yoink_Liberio</fuelIconPath>
+      </li>
+    </comps>
+    <building>
+      <turretGunDef>Gun_Liberio</turretGunDef>
+      <turretBurstCooldownTime>3.8</turretBurstCooldownTime>
+      <turretBurstWarmupTime>1.8</turretBurstWarmupTime>
+    </building>
+	<researchPrerequisites>
+	  <li>IlyaTech</li>
+	</researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Liberio</defName>
+    <label>Liberio shell</label>
+    <graphicData>
+      <texPath>Things/Bullets/SU_LiberioShell</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2.5</drawSize>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <speed>90</speed>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>60</damageAmountBase>
+      <explosionRadius>4.5</explosionRadius>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>Gun_Liberio</defName>
+    <label>Liberio gun</label>
+    <description>A powerful long range anti armor gun designed by Ilya Tech.</description>
+    <graphicData>
+      <texPath>Things/Buildings/SU_Liberio/SU_LiberioTop</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4.5,4.5)</drawSize>
+    </graphicData>
+    <statBases>
+      <AccuracyTouch>0.7</AccuracyTouch>
+      <AccuracyShort>0.8</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.45</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>40</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>Bullet_Liberio</defaultProjectile>
+        <warmupTime>25</warmupTime>
+        <minRange>10</minRange>
+        <range>45</range>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Shot_Liberio</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>20</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+        <forcedMissRadius>1</forcedMissRadius>
+      </li>
+    </verbs>
+  </ThingDef>
+
+</Defs>

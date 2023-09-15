@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>V_ChargedArsenal</defName>
+		<label>charged arsenal</label>
+		<parent>WeaponsMelee</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>V_EltexSeries</defName>
+		<label>eltex series</label>
+		<parent>V_ChargedArsenal</parent>
+	</ThingCategoryDef>
+
+</Defs>

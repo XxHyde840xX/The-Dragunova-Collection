@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>SU_Apparels</defName>
+		<label>megacorp armors</label>
+		<parent>ApparelArmor</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>SU_Helmets</defName>
+		<label>megacorp headgears</label>
+		<parent>SU_Apparels</parent>
+	</ThingCategoryDef>
+
+  
+	<ThingCategoryDef>
+		<defName>SU_Ranged</defName>
+		<label>Ilya Tech weapons</label>
+		<parent>WeaponsRanged</parent>
+	</ThingCategoryDef>
+
+
+</Defs>

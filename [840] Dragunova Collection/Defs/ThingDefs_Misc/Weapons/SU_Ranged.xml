@@ -1,0 +1,731 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>SU_Morgante</defName>
+    <label>Morgante Revolver</label>
+    <description>A heavy caliber tactical revolver, developed by Ilya Tech to provide it's user a close combat light weight yet powerful weapon.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Weapons/SU_Morgante</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.8</drawSize>
+    </graphicData>
+    <thingCategories>
+      <li>SU_Ranged</li>
+    </thingCategories>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+	  <MarketValue>800</MarketValue>
+      <WorkToMake>24900</WorkToMake>
+      <Mass>5</Mass>
+      <AccuracyTouch>0.9</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.75</AccuracyMedium>
+      <AccuracyLong>0.3</AccuracyLong>
+      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>IlyaTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>SU_Bench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Steel>125</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <weaponTags>
+      <li>SU_Morgante</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Morgante</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>22</range>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Shot_Morgante</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+ <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>SU_Usov</defName>
+    <label>Usov Deagle</label>
+    <description>A powerful semi-automatic pistol chambering the .50, developed by Ilya Tech engineers to provide a packing punch, but with a cost. the recoil of the gun is so powerful it requires additional aiming time for the user.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Weapons/SU_Usov</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.9</drawSize>
+    </graphicData>
+    <thingCategories>
+      <li>SU_Ranged</li>
+    </thingCategories>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+	  <MarketValue>980</MarketValue>
+      <WorkToMake>24900</WorkToMake>
+      <Mass>5</Mass>
+      <AccuracyTouch>0.95</AccuracyTouch>
+      <AccuracyShort>0.9</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.3</AccuracyLong>
+      <RangedWeapon_Cooldown>1.9</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>IlyaTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>SU_Bench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Steel>145</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <weaponTags>
+      <li>SU_Morgante</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Morgante</defaultProjectile>
+        <warmupTime>1.8</warmupTime>
+        <range>26</range>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Shot_Morgante</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+    <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>SU_Laviano</defName>
+    <label>Laviano SMG</label>
+    <description>A tactical SMG/AR hybrid of acceptable caliber , developed by Ilya Tech to provide it's user a mid range combat firpower, Agile yet powerful weapon.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Weapons/SU_Laviano</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <thingCategories>
+      <li>SU_Ranged</li>
+    </thingCategories>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+	  <MarketValue>1175</MarketValue>
+      <WorkToMake>25250</WorkToMake>
+      <Mass>8</Mass>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.8</AccuracyShort>
+      <AccuracyMedium>0.75</AccuracyMedium>
+      <AccuracyLong>0.6</AccuracyLong>
+      <RangedWeapon_Cooldown>2.1</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>IlyaTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>SU_Bench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Steel>175</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <weaponTags>
+      <li>SU_Laviano</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Laviano</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>30</range>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+        <soundCast>Shot_Laviano</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+
+  
+    <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>SU_Laurino</defName>
+    <label>Laurino MG</label>
+    <description>A tactical Machine Gun with high caliber AP rounds , developed by Ilya Tech to provide it's user a mid-long range combat supression firpower, quite heavy yet still a powerful weapon.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Weapons/SU_Laurino</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <thingCategories>
+      <li>SU_Ranged</li>
+    </thingCategories>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+	  <MarketValue>1575</MarketValue>
+      <WorkToMake>25750</WorkToMake>
+      <Mass>12</Mass>
+      <AccuracyTouch>0.95</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.80</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>IlyaTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>SU_Bench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Steel>215</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <weaponTags>
+      <li>SU_Laurino</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Laurino</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>38</range>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <burstShotCount>8</burstShotCount>
+        <soundCast>Shot_Laurino</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  
+    <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>SU_Schwalbe</defName>
+    <label>Schwalbe AR</label>
+    <description>A Assault Rifle based on the gjallarhorn empire's original Schwalbe Bolter Rifle capable of trading rounds to your enemies, it's decent range makes it a perfect combat weapon.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Weapons/SU_Schwalbe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <thingCategories>
+      <li>SU_Ranged</li>
+    </thingCategories>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+	  <MarketValue>1375</MarketValue>
+      <WorkToMake>24250</WorkToMake>
+      <Mass>7</Mass>
+      <AccuracyTouch>0.88</AccuracyTouch>
+      <AccuracyShort>0.86</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.7</AccuracyLong>
+      <RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>IlyaTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>SU_Bench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Steel>150</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <weaponTags>
+      <li>SU_Schwalbe</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Schwalbe</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>35</range>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+        <soundCast>Shot_Schwalbe</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+ 
+    <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>SU_Gavino</defName>
+    <label>Gavino Auto-Shotgun</label>
+    <description>The gavino auto shotgun is a strong close range weapon designed by ilya tech to spray and pray on your enemies with spreading shells.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Weapons/SU_Gavino</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <thingCategories>
+      <li>SU_Ranged</li>
+    </thingCategories>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+	  <MarketValue>1225</MarketValue>
+      <WorkToMake>25150</WorkToMake>
+      <Mass>7</Mass>
+      <AccuracyTouch>0.3</AccuracyTouch>
+      <AccuracyShort>0.2</AccuracyShort>
+      <AccuracyMedium>0.15</AccuracyMedium>
+      <AccuracyLong>0.01</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>IlyaTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>SU_Bench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Steel>150</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <weaponTags>
+      <li>SU_Schwalbe</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Gavino</defaultProjectile>
+        <warmupTime>1.2</warmupTime>
+        <range>12</range>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <burstShotCount>6</burstShotCount>
+        <soundCast>Shot_Gavino</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>  
+  
+
+    <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>SU_Federica</defName>
+    <label>Federica Marksman Rifle</label>
+    <description>The elegant Federican Marksman Rifle, armed with high caliber AP rounds , developed by Ilya Tech to provide it's user a long range combat superiority, heavy yet still an elegant weapon.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Weapons/SU_Federica</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <thingCategories>
+      <li>SU_Ranged</li>
+    </thingCategories>
+    <soundInteract>Interact_Rifle</soundInteract>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <statBases>
+	  <MarketValue>1875</MarketValue>
+      <WorkToMake>26000</WorkToMake>
+      <Mass>20</Mass>
+      <AccuracyTouch>0.1</AccuracyTouch>
+      <AccuracyShort>0.7</AccuracyShort>
+      <AccuracyMedium>1.8</AccuracyMedium>
+      <AccuracyLong>1</AccuracyLong>
+      <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>IlyaTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>SU_Bench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Steel>225</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <weaponTags>
+      <li>SU_Federica</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Federica</defaultProjectile>
+        <warmupTime>2</warmupTime>
+        <range>45</range>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Shot_Federica</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  
+  
+     <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>SU_Natasha</defName>
+    <label>Natasha Javelin</label>
+    <description>Rocket, boom.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Weapons/SU_Natasha</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <thingCategories>
+      <li>SU_Ranged</li>
+    </thingCategories>
+    <soundInteract>Interact_Rifle</soundInteract>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <statBases>
+	  <MarketValue>3800</MarketValue>
+      <WorkToMake>37000</WorkToMake>
+      <Mass>28</Mass>
+      <AccuracyTouch>0.1</AccuracyTouch>
+      <AccuracyShort>0.3</AccuracyShort>
+      <AccuracyMedium>0.4</AccuracyMedium>
+      <AccuracyLong>0.95</AccuracyLong>
+      <RangedWeapon_Cooldown>15</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>IlyaTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>SU_Bench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Steel>350</Steel>
+      <ComponentIndustrial>12</ComponentIndustrial>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <weaponTags>
+      <li>SU_Natasha</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Rocket_Natasha</defaultProjectile>
+        <warmupTime>4.8</warmupTime>
+        <range>40</range>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Shot_Federica</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <forcedMissRadius>1</forcedMissRadius>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+ 
+ 
+  <!--Bullet Type-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Morgante</defName>
+    <label>morgante shot</label>
+    <graphicData>
+      <texPath>Things/Bullets/SU_MorganteBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+      <armorPenetrationBase>0.2</armorPenetrationBase>
+      <speed>75</speed>
+    </projectile>
+  </ThingDef>
+  
+   <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Usov</defName>
+    <label>usov shot</label>
+    <graphicData>
+      <texPath>Things/Bullets/SU_MorganteBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>13</damageAmountBase>
+      <armorPenetrationBase>0.38</armorPenetrationBase>
+      <speed>75</speed>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Laviano</defName>
+    <label>laviano shot</label>
+    <graphicData>
+      <texPath>Things/Bullets/SU_LavianoBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>13</damageAmountBase>
+      <armorPenetrationBase>0.35</armorPenetrationBase>
+      <speed>75</speed>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Laurino</defName>
+    <label>laurino shot</label>
+    <graphicData>
+      <texPath>Things/Bullets/SU_LaurinoBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>14</damageAmountBase>
+      <armorPenetrationBase>0.25</armorPenetrationBase>
+      <speed>80</speed>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Federica</defName>
+    <label>federica shot</label>
+    <graphicData>
+      <texPath>Things/Bullets/SU_FedericaBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+      <armorPenetrationBase>1</armorPenetrationBase>
+      <speed>95</speed>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Schwalbe</defName>
+    <label>schwalbe shot</label>
+    <graphicData>
+      <texPath>Things/Bullets/SU_LavianoBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <armorPenetrationBase>0.35</armorPenetrationBase>
+      <speed>85</speed>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Gavino</defName>
+    <label>gavino shot</label>
+    <graphicData>
+      <texPath>Things/Bullets/SU_GavinoBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>4</damageAmountBase>
+      <armorPenetrationBase>0.50</armorPenetrationBase>
+      <speed>85</speed>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Rocket_Natasha</defName>
+    <label>natasha shot</label>
+    <graphicData>
+      <texPath>Things/Bullets/SU_NatashaRocket</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.4</drawSize>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <speed>70</speed>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>26</damageAmountBase>
+      <explosionRadius>5</explosionRadius>
+    </projectile>
+  </ThingDef>
+  
+</Defs>

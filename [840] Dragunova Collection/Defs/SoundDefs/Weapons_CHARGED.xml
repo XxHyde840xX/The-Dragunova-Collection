@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <SoundDef>
+    <defName>Heavy_Melee</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>2</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/HeavySwordHit</clipPath>
+          </li>
+        </grains>      
+          <volumeRange>
+            <min>40</min>
+            <max>50</max>
+          </volumeRange>
+          <pitchRange>
+            <min>1.0</min>
+            <max>1.5</max>
+          </pitchRange>
+          <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Heavy_Dagger</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>2</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/HeavyDagger</clipPath>
+          </li>
+        </grains>      
+          <volumeRange>
+            <min>40</min>
+            <max>50</max>
+          </volumeRange>
+          <pitchRange>
+            <min>1.0</min>
+            <max>1.5</max>
+          </pitchRange>
+          <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Heavy_Katana</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>2</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/HeavyKatana</clipPath>
+          </li>
+        </grains>      
+          <volumeRange>
+            <min>40</min>
+            <max>50</max>
+          </volumeRange>
+          <pitchRange>
+            <min>1.0</min>
+            <max>1.5</max>
+          </pitchRange>
+          <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Heavy_Blunt</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>2</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/HeavyBluntHit</clipPath>
+          </li>
+        </grains>      
+          <volumeRange>
+            <min>40</min>
+            <max>50</max>
+          </volumeRange>
+          <pitchRange>
+            <min>1.0</min>
+            <max>1.5</max>
+          </pitchRange>
+          <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>GunBladeLight</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>2</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/GunBlade01</clipPath>
+          </li>
+        </grains>      
+          <volumeRange>
+            <min>40</min>
+            <max>50</max>
+          </volumeRange>
+          <pitchRange>
+            <min>1.0</min>
+            <max>1.5</max>
+          </pitchRange>
+          <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>GunBladeHeavy</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>2</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/GunBlade02</clipPath>
+          </li>
+        </grains>      
+          <volumeRange>
+            <min>40</min>
+            <max>50</max>
+          </volumeRange>
+          <pitchRange>
+            <min>1.0</min>
+            <max>1.5</max>
+          </pitchRange>
+          <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+   
+</Defs>

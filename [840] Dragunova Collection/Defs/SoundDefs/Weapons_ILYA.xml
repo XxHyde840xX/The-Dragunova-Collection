@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <SoundDef>
+    <defName>Shot_Eclair</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/EclairShot</clipPath>
+          </li>
+        </grains>      
+          <volumeRange>
+            <min>60</min>
+            <max>90</max>
+          </volumeRange>
+          <pitchRange>
+            <min>1.0</min>
+            <max>1.5</max>
+          </pitchRange>
+          <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Shot_Altair</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/AltairShot</clipPath>
+          </li>
+        </grains>      
+          <volumeRange>
+            <min>60</min>
+            <max>90</max>
+          </volumeRange>
+          <pitchRange>
+            <min>1.0</min>
+            <max>1.5</max>
+          </pitchRange>
+          <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Shot_Spritz</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/SpritzLaunch</clipPath>
+          </li>
+        </grains>      
+          <volumeRange>
+            <min>40</min>
+            <max>60</max>
+          </volumeRange>
+          <pitchRange>
+            <min>1.0</min>
+            <max>1.5</max>
+          </pitchRange>
+          <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Shot_Liberio</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/LiberioShot</clipPath>
+          </li>
+        </grains>      
+          <volumeRange>
+            <min>40</min>
+            <max>60</max>
+          </volumeRange>
+          <pitchRange>
+            <min>1.0</min>
+            <max>1.5</max>
+          </pitchRange>
+          <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Shot_Morgante</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/MorganteShot</clipPath>
+          </li>
+        </grains>      
+          <volumeRange>
+            <min>40</min>
+            <max>60</max>
+          </volumeRange>
+          <pitchRange>
+            <min>1.0</min>
+            <max>1.5</max>
+          </pitchRange>
+          <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+    <SoundDef>
+    <defName>Shot_Federica</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/FedericaShot</clipPath>
+          </li>
+        </grains>      
+          <volumeRange>
+            <min>30</min>
+            <max>40</max>
+          </volumeRange>
+          <pitchRange>
+            <min>1.0</min>
+            <max>1.5</max>
+          </pitchRange>
+          <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+    <SoundDef>
+    <defName>Shot_Laurino</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/LaurinoShot</clipPath>
+          </li>
+        </grains>      
+          <volumeRange>
+            <min>40</min>
+            <max>60</max>
+          </volumeRange>
+          <pitchRange>
+            <min>1.0</min>
+            <max>1.5</max>
+          </pitchRange>
+          <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+    <SoundDef>
+    <defName>Shot_Laviano</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/LavianoShot</clipPath>
+          </li>
+        </grains>      
+          <volumeRange>
+            <min>40</min>
+            <max>60</max>
+          </volumeRange>
+          <pitchRange>
+            <min>1.0</min>
+            <max>1.5</max>
+          </pitchRange>
+          <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+    <SoundDef>
+    <defName>Shot_Gavino</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/GavinoShot</clipPath>
+          </li>
+        </grains>      
+          <volumeRange>
+            <min>40</min>
+            <max>60</max>
+          </volumeRange>
+          <pitchRange>
+            <min>1.0</min>
+            <max>1.5</max>
+          </pitchRange>
+          <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+    <SoundDef>
+    <defName>Shot_Schwalbe</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/SchwalbeShot</clipPath>
+          </li>
+        </grains>      
+          <volumeRange>
+            <min>40</min>
+            <max>60</max>
+          </volumeRange>
+          <pitchRange>
+            <min>1.0</min>
+            <max>1.5</max>
+          </pitchRange>
+          <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+    <SoundDef>
+    <defName>Shot_Vulca</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/VulcaShot</clipPath>
+          </li>
+        </grains>      
+          <volumeRange>
+            <min>40</min>
+            <max>60</max>
+          </volumeRange>
+          <pitchRange>
+            <min>1.0</min>
+            <max>1.5</max>
+          </pitchRange>
+          <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+    <SoundDef>
+    <defName>Shot_Yulia</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/YuliaLoop</clipPath>
+          </li>
+        </grains>      
+          <volumeRange>
+            <min>40</min>
+            <max>60</max>
+          </volumeRange>
+          <pitchRange>
+            <min>1.0</min>
+            <max>1.5</max>
+          </pitchRange>
+          <sustainLoop>True</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+</Defs>
