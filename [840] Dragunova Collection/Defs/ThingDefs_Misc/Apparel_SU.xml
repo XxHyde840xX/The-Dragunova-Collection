@@ -34,7 +34,7 @@
   <thingDef ParentName="SUArmorBase">
     <defName>SU_Defisa</defName>
     <label>Assault Marine Armor</label>
-    <description>The Mark 2 defisa Assault marine armor is a high tech heavy assault type fused with a thin exoskeleton coated with armor platings and a built in plated skin suit to provide additional movement speed, comfort, and decent insulation while wearing the armor.</description>
+    <description>The Mark 2 Defisa Assault Marine Armor is a high tech heavy assault type fused with a thin exoskeleton coated with armor platings and a built in plated skin suit to provide additional movement speed, comfort, and decent insulation while wearing the armor.</description>
     <techLevel>Spacer</techLevel>
     <graphicData> 
 	<texPath>Things/Apparel/SU_Defisa</texPath>
